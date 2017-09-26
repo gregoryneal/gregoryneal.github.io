@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>timednotes - website</title>
+
+    
+        <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/site.css" />
+    
+    
+    
+</head>
+<body>
+    <div class="container-fluid full">
+        <div id="site-title">
+            <h1>//greg_pritchard</h1>
+        </div>
+        <ul class="list-inline no-space">
+            <li><a class="link" href="../index.html">home</a></li>
+            <li><a class="link" href="../portfolio.html">résumé</a></li>
+            <li><a class="link" href="../projects.html">projects</a></li>
+            <li><a class="link" href="../contact.html">contact</a></li>
+            <li><a target="_blank" href="https://github.com/gregoryneal" class="link">github</a></li>
+        </ul>
+        <hr class="no-space" />        
+        <!-- The returned view -->
+        
+<h1>Project overview:</h1>
+<h3>timednotes</h3>
+<a class="link" target="_blank" href="https://github.com/gregoryneal/timednotes">timednotes on github</a>
+<br />
+<h4 class="section">Overview</h4>
+<p>
+    I built timednotes with the intention of using it to keep track of various job applications. It's a .Net WPF app which lets you create notebooks that store
+    time-stamped notes in a file. A great use case would be keeping simple notes for different classes in school.
+</p>
+
+<h4 class="section">Difficulties</h4>
+<p>
+    Two way data binding in a WPF application was one of the first things that gave me issues, it took me a while to figure out that I had
+    to use an <code>ObservableCollection&lt;T&gt;</code> for the binding to work properly. But once I figured it out it was simple to add
+    code that opened, changed, saved, and closed the notebook file when you changed data in the view. 
+</p>
+<p>
+    Getting the program to create a binding from a list of files was another challenge. I ended up creating an observable file list class
+    that implements the <code>INotifyPropertyChanged</code> interface. Internally it uses a <code>FileSystemWatcher</code> to listen for 
+    changes to files in a specified directory. Afterwards I could use a directory of files as an <code>ObservableCollection</code>.
+</p>
+<h4 class="section">Future</h4>
+<p>
+    In the future I'm going to update the serialization to include more elements like checkboxes, truthy values and other stuff.
+</p>
+<h4 class="section">Technologies</h4>
+<ul>
+    <li>WPF</li>
+    <li>c#</li>
+</ul>
+
+
+        <footer class="navbar-fixed-bottom text-right footer">
+            <p>&copy; 2017 - Greg Pritchard</p>
+        </footer>
+    </div>
+
+    
+        <script src="../lib/jquery/dist/jquery.js"></script>
+        <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../js/site.js@v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo"></script>
+    
+    
+
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"requestId":"d8cffbcfa17b4a449ed89e0ea0779eb3","requestMappingFromServer":false}
+</script>
+<script type="text/javascript" src="../../localhost+57614/2f6573b5917742b09fb496fb7e712876/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
