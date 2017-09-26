@@ -1,0 +1,63 @@
+﻿body {
+    font-family: Consolas;
+    background-color: #1E1E1E;
+    color: #DCDCDC;
+}
+
+html, body, .full {
+    margin: 0;
+    height: 100%;
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+}
+
+.infull {
+    flex-grow: 1;
+}
+
+#site-title {
+    display: inline-flex;
+}
+
+.footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title-div {
+    display: inline;
+}
+
+.no-space {
+    padding: 0;
+    margin: 0;
+}
+
+/* Follow this directly after no-space */
+.space-top {
+    margin-top: 20px;
+}
+
+a {
+    background-color: transparent;
+    color: #4EC9B0;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+    color: #4EC9B0;
+}
+
+/* PDF Viewer object id */
+#plugin {
+    max-width: 500px !important;
+    height: auto !important;
+}
+
+.section {
+    color: #d7ba7d;
+    text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this website - website</title>
+
+    
+        <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/site.css" />
+    
+    
+    
+</head>
+<body>
+    <div class="container-fluid full">
+        <div id="site-title">
+            <h1>//greg_pritchard</h1>
+        </div>
+        <ul class="list-inline no-space">
+            <li><a class="link" href="../index.html">home</a></li>
+            <li><a class="link" href="../portfolio.html">résumé</a></li>
+            <li><a class="link" href="../projects.html">projects</a></li>
+            <li><a class="link" href="../contact.html">contact</a></li>
+            <li><a target="_blank" href="https://github.com/gregoryneal" class="link">github</a></li>
+        </ul>
+        <hr class="no-space" />        
+        <!-- The returned view -->
+        
+<h1>Project overview:</h1>
+<h3>this-website</h3>
+<a class="link" target="_blank" href="https://github.com/gregoryneal/website-local">this-website on github</a>
+<br />
+
+<h4 class="section">Overview</h4>
+<p>
+    This website was built to be my personal website, mainly as a place to store my portfolio and projects. At the time of writing the site is finished,
+    but not deployed, I have outlined my plan for deployment below. The website is split into the local and deployment environments:
+</p>
+
+<ul>
+    <li><p><b>local environment:</b> my local build environment is built on top of the <a href="https://docs.microsoft.com/en-us/aspnet/core/" target="_blank">ASP .Net Core</a> framework.</p></li>
+    <li><p><b>deployment environment:</b> my deployment process consists of recursively crawling my locally hosted development site with <a href="https://www.gnu.org/software/wget/manual/wget.html" target="_blank">wget</a>, saving the output html, css, js and any images. Then it's as simple as deploying on <a href="https://pages.github.com/" target="_blank">github pages</a> through my github account.</p></li>
+</ul>
+
+<h4 class="section">Difficulties</h4>
+<p>
+    One of the things that I knew that I needed before even picked the framework was that I needed to be able to easily add posts and projects without doing 
+    a lot of extra coding. Ideally I wanted to be able to add &lt;project-name&gt;.html to my "projects" folder, it would automatically create a page at 
+    "site.com/projects/&lt;project-name&gt;". I found a solution through a custom controller, and the anchor tag helpers that let me explicitly specify <code>asp-route-&lt;data&gt;</code>.
+</p>
+<h4 class="section">Future</h4>
+<p>
+    Backend wise I want to abstract some of my auto routing code to make it more modular. Then possibly turn it into a nuget package.
+</p>
+<p>
+    For the frontend I'm going to work on some of the design. I was aiming for a visual studio dark theme feel, but I think I can make it better.
+</p>
+
+<h4 class="section">Technologies</h4>
+<ul>
+    <li>ASP.NET core framework</li>
+    <li>github</li>
+    <li>wget</li>
+</ul>
+
+
+
+        <footer class="navbar-fixed-bottom text-right footer">
+            <p>&copy; 2017 - Greg Pritchard</p>
+        </footer>
+    </div>
+
+    
+        <script src="../lib/jquery/dist/jquery.js"></script>
+        <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="../js/site.js@v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo"></script>
+    
+    
+
+    
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"requestId":"125bba43448a4d0aa99d110087cfb637","requestMappingFromServer":false}
+</script>
+<script type="text/javascript" src="../../localhost+53011/67b1b2093247439d85352d8a1d19ca68/browserLink" async="async"></script>
+<!-- End Browser Link -->
+
+</body>
+</html>
