@@ -1,0 +1,23 @@
+{
+	"fileExtensions": {
+		".html": {
+			"cleanSuccessiveEmptyLines": false,
+			"cleanInBetweenInclusive": [
+				[
+					"<!-- Visual Studio Browser Link -->",
+					"<!-- End Browser Link -->"
+				]
+			],
+			"cleanLinesContaining": [
+				"<script src=\"js/site.js@v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo\"></script>"
+			],
+			"cleanComments": false,
+			"minify": false
+		}
+	},
+	"cleanFilesNamed": [
+		"site.js@v=EWaMeWsJBYWmL2g_KkgXZQ5nPe-a3Ichp0LEgzXczKo",
+		"browserLink"
+	],
+	"cleanEmptyFolders": true
+}
