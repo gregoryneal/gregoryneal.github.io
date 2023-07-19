@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Untitled Album - gɿɘg</title>
-    <link rel="icon" type="image/x-icon" href="img/musiczyx.svg">
+    <link rel="icon" type="image/x-icon" href="img/earbud.png">
   </head>
   <body>
     <div class="wrapper" id="app">
@@ -48,8 +48,8 @@
         </div>
         <div class="progress__top">
           <div class="album-info" v-if="currentTrack">
-            <div class="album-info__name">{{ currentTrack.artist }} |</div>
-            <div class="album-info__track"> {{ currentTrack.name }}</div>
+            <div class="album-info__name">{{ currentTrack.artist }}</div>
+            <div class="album-info__track">| {{ currentTrack.name }}</div>
           </div>
         </div>
       </div>

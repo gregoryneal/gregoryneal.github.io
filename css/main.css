@@ -1,5 +1,5 @@
 body {
-  background: #dfe7ef;
+  background: #414346;
   font-family: "Bitter", serif;
   z-index: -10;
   overflow: hidden;
@@ -46,15 +46,17 @@ body {
   justify-self: center;
 
   aspect-ratio: 1;
-  width: 400px;
-  height: 400px;
-  background: #eef3f7;
+  max-width: 400px;
+  max-height: 400px;
   min-width: 300px;
   min-height: 300px;
-  box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+  width: 90%;
+  background: #eef3f7;
+  /*box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);*/
   border-radius: 50%;
-  padding: 30px;
-  padding-top: 50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -166,8 +168,7 @@ body {
   justify-content: center;
   grid-row: 2 / span 2;
   grid-column: 2;
-  width: 400px;
-  height: 400px;
+  aspect-ratio: 1;
   border-radius: 50%;
   z-index: 0;
 }
@@ -257,7 +258,7 @@ body {
 }
 .player-controls__item.-xl {
   margin-bottom: 0;
-  font-size: 120px;
+  font-size: 70px;
   filter: drop-shadow(0 11px 6px rgba(26, 28, 31, 0.45));
   color: #dadadae8;
   width: auto;
@@ -297,14 +298,14 @@ body {
   justify-content: center;
 }
 .progress__duration {
-  color: #71829e;
+  color: #fff;
   font-weight: 700;
   font-size: 16px;
   opacity: 0.5;
 }
 .progress__time {
   margin-top: 2px;
-  color: #71829e;
+  color: #fff;
   font-weight: 700;
   font-size: 16px;
   opacity: 0.5;
@@ -314,21 +315,20 @@ body {
   height: 20px;
   width: 100%;
   cursor: pointer;
-  background-color: #d0d8e6;
+  background-color: #c6c6c6;
   display: inline-block;
-  border-radius: 10px;
 }
 
 .progress__current {
   height: inherit;
   width: 0%;
-  background-color: #a3b3ce;
-  border-radius: 10px;
+  background-color: #733939;
+  border: 3px solid black;
 }
 
 .album-info {
   display: flex;
-  color: #71829e;
+  color: #c6c6c6;
   padding-right: 60px;
   user-select: none;
 }
@@ -343,6 +343,8 @@ body {
   margin-bottom: 12px;
   margin-right: 3px;
   line-height: 1.3em;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 @media screen and (max-width: 576px), (max-height: 500px) {
   .album-info__name {
