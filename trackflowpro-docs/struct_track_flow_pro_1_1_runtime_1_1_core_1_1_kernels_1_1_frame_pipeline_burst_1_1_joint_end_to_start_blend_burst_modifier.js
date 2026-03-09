@@ -1,0 +1,9 @@
+var struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier =
+[
+    [ "Schedule", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier.html#a935db64b137b4e1c93588385ffb3b69f", null ],
+    [ "Closed", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier.html#a98cb50746ab10aa26721e7bc488d0619", null ],
+    [ "KnotSampleIndex", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier.html#ac5ebc2fab4cfd2fddcfe4e23d98e552b", null ],
+    [ "Profile", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier.html#af02cee84dd5824d285ea14b288ba0b40", null ],
+    [ "TailMeters", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier.html#a4e5e601d0d2ac27af4440a35b949cd15", null ],
+    [ "TailPercOverride", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_joint_end_to_start_blend_burst_modifier.html#a94a01984281f895700388b6ae5461dd5", null ]
+];

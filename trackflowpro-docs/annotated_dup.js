@@ -1,0 +1,113 @@
+var annotated_dup =
+[
+    [ "TrackFlowPro", "namespace_track_flow_pro.html", [
+      [ "Runtime", "namespace_track_flow_pro_1_1_runtime.html", [
+        [ "Core", "namespace_track_flow_pro_1_1_runtime_1_1_core.html", [
+          [ "Curves", "namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_curves.html", [
+            [ "TrackFlowProfilerMarkers", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_profiler_markers.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_profiler_markers" ],
+            [ "TrackFlowSpline", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline" ],
+            [ "TubeOptions", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_tube_options.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_tube_options" ],
+            [ "RoadOptions", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_road_options.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_road_options" ],
+            [ "UTrackOptions", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_u_track_options.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_u_track_options" ],
+            [ "TrackFlowSample", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_sample.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_sample" ]
+          ] ],
+          [ "Frames", "namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_frames.html", [
+            [ "SplineDefaults", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_spline_defaults.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_spline_defaults" ],
+            [ "SegmentContext", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_segment_context.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_segment_context" ],
+            [ "IFrameModifier", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_frame_modifier.html", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_frame_modifier" ],
+            [ "IRollLaw", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_roll_law.html", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_roll_law" ],
+            [ "FramePipeline", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_frame_pipeline.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_frame_pipeline" ],
+            [ "RollRateLimiterModifier", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_roll_rate_limiter_modifier.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_roll_rate_limiter_modifier" ],
+            [ "RMFSmoother", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_r_m_f_smoother.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_r_m_f_smoother" ],
+            [ "StartUpAlignModifier", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_start_up_align_modifier.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_start_up_align_modifier" ],
+            [ "RollProfileModifier", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_roll_profile_modifier.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_roll_profile_modifier" ],
+            [ "FrameCleanupModifier", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_frame_cleanup_modifier.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_frame_cleanup_modifier" ],
+            [ "JointEndToStartBlendModifier", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_joint_end_to_start_blend_modifier.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_joint_end_to_start_blend_modifier" ],
+            [ "ITrackFrameModifier", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_track_frame_modifier.html", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_track_frame_modifier" ],
+            [ "TrackContext", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_track_context.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_track_context" ],
+            [ "SegmentSpan", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_segment_span.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_segment_span" ],
+            [ "PostDeformFramePipeline", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_post_deform_frame_pipeline.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_post_deform_frame_pipeline" ]
+          ] ],
+          [ "Kernels", "namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels.html", [
+            [ "FrameJobs", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_jobs.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_jobs" ],
+            [ "FramePipelineBurst", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst" ],
+            [ "IBurstFrameModifier", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_i_burst_frame_modifier.html", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_i_burst_frame_modifier" ],
+            [ "KernelHelpers", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_kernel_helpers.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_kernel_helpers" ],
+            [ "BurstPolyline", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_polyline.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_polyline" ],
+            [ "PolylineBuildArcLengthSamplesJob", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_build_arc_length_samples_job.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_build_arc_length_samples_job" ],
+            [ "PolylineBuildCurvatureSamplesJob", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_build_curvature_samples_job.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_build_curvature_samples_job" ],
+            [ "PolylineBurstUtils", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_burst_utils.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_burst_utils" ],
+            [ "BurstCurveSample3d", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_curve_sample3d.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_curve_sample3d" ],
+            [ "BurstSpline3d", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d" ],
+            [ "BurstSpline3dExtensions", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d_extensions.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d_extensions" ],
+            [ "SampleSplineJob", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_sample_spline_job.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_sample_spline_job" ],
+            [ "SampleSplineJob2", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_sample_spline_job2.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_sample_spline_job2" ]
+          ] ],
+          [ "Meshing", "namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html", [
+            [ "ColdWheelsRoadMeshBuilder", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cold_wheels_road_mesh_builder.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cold_wheels_road_mesh_builder" ],
+            [ "CrossSectionProfile2D", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cross_section_profile2_d.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cross_section_profile2_d" ],
+            [ "CrossSectionProfile2DAsset", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cross_section_profile2_d_asset.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cross_section_profile2_d_asset" ],
+            [ "CustomProfileMeshBuilder", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_custom_profile_mesh_builder.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_custom_profile_mesh_builder" ],
+            [ "ICrossSectionProfile2D", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_i_cross_section_profile2_d.html", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_i_cross_section_profile2_d" ],
+            [ "PipeMeshBuilder", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_pipe_mesh_builder.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_pipe_mesh_builder" ],
+            [ "PolylineExtruder", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder" ],
+            [ "RoadMeshBuilder", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_road_mesh_builder.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_road_mesh_builder" ],
+            [ "ForceComputeSettings", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_compute_settings.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_compute_settings" ],
+            [ "CurvatureSampleData", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data" ],
+            [ "CurvaturePreviewUtil2", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_preview_util2.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_preview_util2" ],
+            [ "ForcePreviewSettings", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_preview_settings.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_preview_settings" ],
+            [ "ITrackMeshBuilder", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_i_track_mesh_builder.html", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_i_track_mesh_builder" ],
+            [ "MeshingUtils", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_meshing_utils.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_meshing_utils" ],
+            [ "SpawnJitter", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_spawn_jitter.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_spawn_jitter" ],
+            [ "TrackFlowSpawner", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner" ]
+          ] ],
+          [ "Sampling", "namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling.html", [
+            [ "ChordErrorSampler", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler" ]
+          ] ],
+          [ "TrackFlowCoaster", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster" ],
+          [ "TrackFlowGravity", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_gravity.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_gravity" ],
+          [ "TravelerOffset", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_traveler_offset.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_traveler_offset" ],
+          [ "TrackFlowTraveler", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_traveler.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_traveler" ]
+        ] ],
+        [ "ArcFrameBridge", "class_track_flow_pro_1_1_runtime_1_1_arc_frame_bridge.html", "class_track_flow_pro_1_1_runtime_1_1_arc_frame_bridge" ],
+        [ "Helpers", "class_track_flow_pro_1_1_runtime_1_1_helpers.html", "class_track_flow_pro_1_1_runtime_1_1_helpers" ],
+        [ "TrackFlowGeneratedMarker", "class_track_flow_pro_1_1_runtime_1_1_track_flow_generated_marker.html", null ],
+        [ "TrackFlowSpawnAnchor", "class_track_flow_pro_1_1_runtime_1_1_track_flow_spawn_anchor.html", null ],
+        [ "TrackFlowSpawnAnchorCache", "class_track_flow_pro_1_1_runtime_1_1_track_flow_spawn_anchor_cache.html", "class_track_flow_pro_1_1_runtime_1_1_track_flow_spawn_anchor_cache" ],
+        [ "CurvatureFunctionAsset", "class_track_flow_pro_1_1_runtime_1_1_curvature_function_asset.html", "class_track_flow_pro_1_1_runtime_1_1_curvature_function_asset" ],
+        [ "ArcOptions", "class_track_flow_pro_1_1_runtime_1_1_arc_options.html", "class_track_flow_pro_1_1_runtime_1_1_arc_options" ],
+        [ "ClothoidOptions", "class_track_flow_pro_1_1_runtime_1_1_clothoid_options.html", "class_track_flow_pro_1_1_runtime_1_1_clothoid_options" ],
+        [ "BezierOptions", "class_track_flow_pro_1_1_runtime_1_1_bezier_options.html", "class_track_flow_pro_1_1_runtime_1_1_bezier_options" ],
+        [ "BSplineOptions", "class_track_flow_pro_1_1_runtime_1_1_b_spline_options.html", "class_track_flow_pro_1_1_runtime_1_1_b_spline_options" ],
+        [ "CatmullRomOptions", "class_track_flow_pro_1_1_runtime_1_1_catmull_rom_options.html", "class_track_flow_pro_1_1_runtime_1_1_catmull_rom_options" ],
+        [ "HermiteOptions", "class_track_flow_pro_1_1_runtime_1_1_hermite_options.html", "class_track_flow_pro_1_1_runtime_1_1_hermite_options" ],
+        [ "CustomSplineOptions", "class_track_flow_pro_1_1_runtime_1_1_custom_spline_options.html", "class_track_flow_pro_1_1_runtime_1_1_custom_spline_options" ],
+        [ "SplineOptions", "class_track_flow_pro_1_1_runtime_1_1_spline_options.html", "class_track_flow_pro_1_1_runtime_1_1_spline_options" ],
+        [ "ConstantLawParams", "class_track_flow_pro_1_1_runtime_1_1_constant_law_params.html", "class_track_flow_pro_1_1_runtime_1_1_constant_law_params" ],
+        [ "LinearLawParams", "class_track_flow_pro_1_1_runtime_1_1_linear_law_params.html", "class_track_flow_pro_1_1_runtime_1_1_linear_law_params" ],
+        [ "CurveSpecOptions", "class_track_flow_pro_1_1_runtime_1_1_curve_spec_options.html", "class_track_flow_pro_1_1_runtime_1_1_curve_spec_options" ],
+        [ "TrackModifierOptions", "class_track_flow_pro_1_1_runtime_1_1_track_modifier_options.html", "class_track_flow_pro_1_1_runtime_1_1_track_modifier_options" ],
+        [ "TrackFlowKnot", "class_track_flow_pro_1_1_runtime_1_1_track_flow_knot.html", "class_track_flow_pro_1_1_runtime_1_1_track_flow_knot" ]
+      ] ],
+      [ "Editor", "namespace_track_flow_pro_1_1_editor.html", [
+        [ "Readme", "class_track_flow_pro_1_1_editor_1_1_readme.html", "class_track_flow_pro_1_1_editor_1_1_readme" ],
+        [ "ReadmeEditor", "class_track_flow_pro_1_1_editor_1_1_readme_editor.html", "class_track_flow_pro_1_1_editor_1_1_readme_editor" ],
+        [ "SerializeReferenceListField", "class_track_flow_pro_1_1_editor_1_1_serialize_reference_list_field.html", "class_track_flow_pro_1_1_editor_1_1_serialize_reference_list_field" ],
+        [ "TrackFlowBezierHandleEditorUtil", "class_track_flow_pro_1_1_editor_1_1_track_flow_bezier_handle_editor_util.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_bezier_handle_editor_util" ],
+        [ "TrackFlowEditorSelection", "class_track_flow_pro_1_1_editor_1_1_track_flow_editor_selection.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_editor_selection" ],
+        [ "TrackFlowHoverProbe", "class_track_flow_pro_1_1_editor_1_1_track_flow_hover_probe.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_hover_probe" ],
+        [ "TrackFlowHoverProbeToggle", "class_track_flow_pro_1_1_editor_1_1_track_flow_hover_probe_toggle.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_hover_probe_toggle" ],
+        [ "TrackFlowKnotDrawer", "class_track_flow_pro_1_1_editor_1_1_track_flow_knot_drawer.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_knot_drawer" ],
+        [ "TrackFlowMeshPrefabExporter", "class_track_flow_pro_1_1_editor_1_1_track_flow_mesh_prefab_exporter.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_mesh_prefab_exporter" ],
+        [ "TrackFlowPlaceKnotTool", "class_track_flow_pro_1_1_editor_1_1_track_flow_place_knot_tool.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_place_knot_tool" ],
+        [ "TrackFlowPlaceKnotsToggle", "class_track_flow_pro_1_1_editor_1_1_track_flow_place_knots_toggle.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_place_knots_toggle" ],
+        [ "TrackFlowToolsToolbarOverlay", "class_track_flow_pro_1_1_editor_1_1_track_flow_tools_toolbar_overlay.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_tools_toolbar_overlay" ],
+        [ "TrackFlowProPrefabSpawner", "class_track_flow_pro_1_1_editor_1_1_track_flow_pro_prefab_spawner.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_pro_prefab_spawner" ],
+        [ "TrackFlowScreenPickUtil", "class_track_flow_pro_1_1_editor_1_1_track_flow_screen_pick_util.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_screen_pick_util" ],
+        [ "TrackFlowSpawnerEditor", "class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor" ],
+        [ "TrackFlowSplineEditor", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor" ],
+        [ "TrackFlowSplineOverlay", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_overlay.html", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_overlay" ]
+      ] ]
+    ] ],
+    [ "IPolylineMutator", "interface_i_polyline_mutator.html", "interface_i_polyline_mutator" ]
+];

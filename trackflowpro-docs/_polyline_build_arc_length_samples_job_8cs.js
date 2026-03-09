@@ -1,0 +1,4 @@
+var _polyline_build_arc_length_samples_job_8cs =
+[
+    [ "TrackFlowPro.Runtime.Core.Kernels.PolylineBuildArcLengthSamplesJob", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_build_arc_length_samples_job.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_polyline_build_arc_length_samples_job" ]
+];

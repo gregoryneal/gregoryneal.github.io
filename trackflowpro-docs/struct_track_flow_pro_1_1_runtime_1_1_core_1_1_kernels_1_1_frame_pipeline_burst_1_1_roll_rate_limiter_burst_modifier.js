@@ -1,0 +1,5 @@
+var struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_roll_rate_limiter_burst_modifier =
+[
+    [ "Schedule", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_roll_rate_limiter_burst_modifier.html#adb45e9ae7470ab9c15c2ae40fa9800a1", null ],
+    [ "MaxRollDegPerMeter", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_frame_pipeline_burst_1_1_roll_rate_limiter_burst_modifier.html#a56137c040370612c4c777941954fdc2d", null ]
+];

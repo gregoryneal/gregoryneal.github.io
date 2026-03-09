@@ -1,0 +1,6 @@
+var _chord_error_sampler_8cs =
+[
+    [ "TrackFlowPro.Runtime.Core.Sampling.ChordErrorSampler", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler" ],
+    [ "TrackFlowPro.Runtime.Core.Sampling.ChordErrorSampler.Polyline", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline" ],
+    [ "TrackFlowPro.Runtime.Core.Sampling.ChordErrorSampler.ChordErrorSamplingParams", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_chord_error_sampling_params.html", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_chord_error_sampling_params" ]
+];
