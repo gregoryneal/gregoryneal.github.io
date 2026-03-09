@@ -1,9 +1,2 @@
-# Untitled Album - gɿɘg
-
-**Artist**: gɿɘg
-
-**Release date**: 16 July 2023
-
-**Genre**: EDM, Dance, Phonk, Hip Hop
-
-**Label**: Independent
+# Homepage for hostable projects.
+I've had a lot of web projects in the past, but I always kept them hosted on their own site. This will be the home for any new projects that can be hosted on a static page.
