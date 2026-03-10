@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.16.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TrackFlow Pro Documentation: Main Page</title>
+<title>TrackFlow Pro Documentation: Welcome</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,10 +88,54 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">TrackFlow Pro Documentation Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Welcome </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h2 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+Hello, welcome to the TrackFlow Pro Unity documentation.</h2>
+<p>This page will serve as a first glance and quick start guide, so you can get up and running in Unity in less than 5 minutes. If you don't want to read about all the boring stuff about how this library works, just keep reading for a quick start guide. Otherwise head on over to <a class="el" href="more_info.html" title="Detailed Information">Detailed Information</a>.</p>
+<blockquote class="doxtable">
+<p>Note: in this tutorial we will use the words "knot" and "control point" interchangeably. They both specifically reference the <span class="tt">TrackFlowKnot</span> objects that populate the <span class="tt">TrackFlowSpline.ControlPoints</span> array. </p>
+</blockquote>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Installation</h5>
+<p>To install <span class="tt">TrackFlow Pro</span> you can import it via the package manager.</p>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Setup</h5>
+<p>To draw your first <span class="tt">TrackFlowSpline</span>, click the <span class="tt">TrackFlow</span> button in the scene editor toolbar to enable curve drawing.</p>
+<div class="image">
+<img src="trackflowtoolbarbutton.png" alt=""/>
+<div class="caption">
+it's the red circle</div></div>
+<p>Then click and drag in the scene to place your first knot and set its frame orientation. Now click and drag somewhere else to add the second control point. You can also add knots by clicking the <span class="tt">Add</span> button in the <span class="tt">TrackFlowSpline</span> object under <span class="tt">Control Points</span>. This will add a knot at the local center of the gameobject. If you click <span class="tt">Add</span> with at least one knot already in the list, it will clone the last knot in the list and instantiate it at its location. You can drag it using the scene handles or by scrubbing the position values in the inspector. To close the curve select the spline object and click <span class="tt">Settings &gt; Closed</span>.</p>
+<div class="image">
+<img src="myfirstcurve.png" alt=""/>
+</div>
+<p>Once you have drawn your curve, or at any point after adding the first knot, you can create an empty game object and add a <span class="tt">TrackFlowSpawner</span> component. Drag the spline script reference into the <span class="tt">TrackFlowSpline</span> property field and set the <span class="tt">Spawn Method</span> to <span class="tt">Mesh</span>. You can also set the material, by default this is null so you will get a default pink mesh.</p>
+<p>If you cannot see your mesh generated at this point, make sure it is not obscured by scene objects, you can select the spline gameobject and click the <span class="tt">Move Tool</span> to move it around in the scene if you need to get a better view.</p>
+<div class="image">
+<img src="myfirstspawner.png" alt=""/>
+</div>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Editing the frames</h5>
+<p>Before editing the frames it's vital to ensure you can actually <em>see</em> the frames you are editing, since these are not just positions, but orientations in space along the curve. To view the frame data you have two options: the first is to enable <span class="tt">Preview Frames</span> within the <span class="tt">TrackFlowSpline</span> settings menu <span class="tt">Settings &gt; Extra &gt; Preview Frames</span>. Then play with the max frame indicator setting and max frame indicator density setting to choose values that don't crowd the editor. The second option is to generate a non symmetrical mesh profile along the spline, like a road shaped mesh, so you can visually see the frame roll in action. In this tutorial we will be spawning a mesh instead.</p>
+<p>To edit the frame data of the curve ensure you have selected the spline object. To rotate the target frame at the currently selected knot, you can hold shift and click on the drag handles to rotate the knot. If you are in spline mode you can also drag the blue and orange handles which control the input and output tangents respectively.</p>
+<div class="image">
+<img src="myfirstframeedit.png" alt=""/>
+<div class="caption">
+The frames have been rolled</div></div>
+<p>For frame rolling <em>options between</em> knots, you can expand the blue <span class="tt">Track Modifier Options</span> button on each individual knot in the control points array (see above picture). Here you can control the roll profile along the segment, the initial frame alignment (whether or not to ignore the knot frame), and a maximum roll degree per meter setting, which can limit the frame rolling along the curve. Within the <span class="tt">Roll Profile</span> tab you can apply a roll using the profile animation curve and the amplitude value, which is in degrees. The values themselves are relative to the starting frame at the knot location, whatever orientation that might be.</p>
+<blockquote class="doxtable">
+<p>Note to get a result like the photo below you will need to increase the polyline sampling quality AND the mesh builder quality. The former located under the <span class="tt">TrackFlowSpline &gt; Settings &gt; Extra &gt; Quality</span> and the latter located under <span class="tt">TrackFlowSpawner &gt; Mesh &gt; Mesh Quality</span>. </p>
+</blockquote>
+<div class="image">
+<img src="myfirstrollprofile.png" alt=""/>
+</div>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Exporting the mesh</h5>
+<p>Once you are happy with your mesh, you can export it as a prefab by expanding the <span class="tt">Mesh</span> options (within <span class="tt">TrackFlowSpawner</span>) and clicking the export button at the bottom. </p>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
