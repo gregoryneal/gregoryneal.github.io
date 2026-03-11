@@ -27,6 +27,7 @@ var NAVTREE =
   [ "TrackFlow Pro Documentation", "index.html", [
     [ "Welcome", "index.html", null ],
     [ "Detailed Information", "more_info.html", null ],
+    [ "Spawner System", "spawner_overview.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
@@ -69,8 +70,8 @@ var NAVTREEINDEX =
 "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner_1_1_custom_profile_options.html#a476907a7944f63c1de37b701839bdf98",
 "class_track_flow_pro_1_1_runtime_1_1_track_flow_knot.html#a333f37ae2e95707dbd2d37f44d9f1091",
 "namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_curves.html",
-"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html#a0b3173f7722ad0a708a8fcdd9b623d5e",
-"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_compute_settings.html#a74e5eea0d9e73b85d2a491414b642b78"
+"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html",
+"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_compute_settings.html#a60f881d159330d6417216c14145aa091"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
