@@ -98,7 +98,11 @@ $(function(){initNavTree('class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_fl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a96ac007c716c3f57e867956e3f502a" id="r_a0a96ac007c716c3f57e867956e3f502a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0a96ac007c716c3f57e867956e3f502a">SnapToCurrentT</a> ()</td></tr>
 <tr class="memitem:a255b812c05f741f3f0e9b49acf5b05e8" id="r_a255b812c05f741f3f0e9b49acf5b05e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a255b812c05f741f3f0e9b49acf5b05e8">AlignStartItems</a> ()</td></tr>
+<tr class="memitem:a3b6d439e1dbe04858194f862ae9a5390" id="r_a3b6d439e1dbe04858194f862ae9a5390"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3b6d439e1dbe04858194f862ae9a5390">SetPaused</a> (bool pause)</td></tr>
+<tr class="memitem:a6b8bf1aab5ae35a88354f0e532c2eaa1" id="r_a6b8bf1aab5ae35a88354f0e532c2eaa1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6b8bf1aab5ae35a88354f0e532c2eaa1">ResetRun</a> ()</td></tr>
+<tr class="memitem:a9fda90a45578ccba53234fc88894c0c8" id="r_a9fda90a45578ccba53234fc88894c0c8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9fda90a45578ccba53234fc88894c0c8">BeginRun</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -107,11 +111,25 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:ac314b9d05cb300cf6dd09614eaab848e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How long to wait before traveling along the spline, in seconds.  <br /></td></tr>
 <tr class="memitem:a822a512656b327c0e0e07862bf610809" id="r_a822a512656b327c0e0e07862bf610809"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a822a512656b327c0e0e07862bf610809">Speed</a> = 4f</td></tr>
 <tr class="memdesc:a822a512656b327c0e0e07862bf610809"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear speed along the track, in meters per second.  <br /></td></tr>
+<tr class="memitem:a0854df28816633266cc56cb4f4b730a0" id="r_a0854df28816633266cc56cb4f4b730a0"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0854df28816633266cc56cb4f4b730a0">Loop</a> = false</td></tr>
+<tr class="memitem:ab9139a3d460d6c1cf4d16d62267d5099" id="r_ab9139a3d460d6c1cf4d16d62267d5099"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab9139a3d460d6c1cf4d16d62267d5099">GoOnStart</a> = false</td></tr>
 <tr class="memitem:a81840b05484e2601970441db494fef40" id="r_a81840b05484e2601970441db494fef40"><td class="memItemLeft"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_traveler_offset.html">TravelerOffset</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a81840b05484e2601970441db494fef40">travelers</a></td></tr>
 <tr class="memdesc:a81840b05484e2601970441db494fef40"><td class="mdescLeft">&#160;</td><td class="mdescRight">The objects that will be moved along the spline.  <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:ac3c3eda4d04a020a10db2a2701837955" id="r_ac3c3eda4d04a020a10db2a2701837955"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac3c3eda4d04a020a10db2a2701837955">IsRunning</a><code> [get]</code></td></tr>
+<tr class="memitem:a27832333ff46c1feb0d3a1cb3bcd06a4" id="r_a27832333ff46c1feb0d3a1cb3bcd06a4"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a27832333ff46c1feb0d3a1cb3bcd06a4">IsPaused</a><code> [get]</code></td></tr>
+<tr class="memitem:a3cf4db1f4b691dae77df5af72beac2ec" id="r_a3cf4db1f4b691dae77df5af72beac2ec"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a3cf4db1f4b691dae77df5af72beac2ec">TrackT</a><code> [get]</code></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-events" class="groupheader"><a id="events" name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:a0bf255e04b21ec05d0400907f61cb7a1" id="r_a0bf255e04b21ec05d0400907f61cb7a1"><td class="memItemLeft">Action&#160;</td><td class="memItemRight"><a class="el" href="#a0bf255e04b21ec05d0400907f61cb7a1">OnFinishedLoop</a></td></tr>
+<tr class="memitem:aa8de460c5576b3bc087c8836983d638a" id="r_aa8de460c5576b3bc087c8836983d638a"><td class="memItemLeft">Action&#160;</td><td class="memItemRight"><a class="el" href="#aa8de460c5576b3bc087c8836983d638a">StateChanged</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:ae6c3522c461e674424b935be3e985167" id="r_ae6c3522c461e674424b935be3e985167"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6c3522c461e674424b935be3e985167">OnValidate</a> ()</td></tr>
 <tr class="memitem:a679f5578d292b09d5ba7b96749f9c67f" id="r_a679f5578d292b09d5ba7b96749f9c67f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a679f5578d292b09d5ba7b96749f9c67f">Awake</a> ()</td></tr>
 <tr class="memitem:ae274498c2d61d8ce079b0de76b99a435" id="r_ae274498c2d61d8ce079b0de76b99a435"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae274498c2d61d8ce079b0de76b99a435">Start</a> ()</td></tr>
 <tr class="memitem:a76a20bd3f17032b8b5c3c7d9673a3bed" id="r_a76a20bd3f17032b8b5c3c7d9673a3bed"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a76a20bd3f17032b8b5c3c7d9673a3bed">Update</a> ()</td></tr>
@@ -121,11 +139,14 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a2cc803ac296b3615e64219c03272ecd3" id="r_a2cc803ac296b3615e64219c03272ecd3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a2cc803ac296b3615e64219c03272ecd3">invokedFinishedLoop</a> = false</td></tr>
 <tr class="memitem:a50d0dc841988d25724b214661b7f209f" id="r_a50d0dc841988d25724b214661b7f209f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a50d0dc841988d25724b214661b7f209f">_len</a> = 0f</td></tr>
 <tr class="memitem:a353904b6aa46248d9cb7dc270433aadb" id="r_a353904b6aa46248d9cb7dc270433aadb"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a353904b6aa46248d9cb7dc270433aadb">_go</a> = false</td></tr>
 <tr class="memitem:afb30e448fe33e577f6a5401d1fe1654a" id="r_afb30e448fe33e577f6a5401d1fe1654a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#afb30e448fe33e577f6a5401d1fe1654a">_tAccum</a> = 0f</td></tr>
 <tr class="memitem:a5ba54b18cc56359af015f69624569a3a" id="r_a5ba54b18cc56359af015f69624569a3a"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a5ba54b18cc56359af015f69624569a3a">_nS</a> = 0f</td></tr>
 <tr class="memdesc:a5ba54b18cc56359af015f69624569a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current normalized arc length position in [0, 1].  <br /></td></tr>
+<tr class="memitem:ac05219e6dd1225782fda526f1ca6afd9" id="r_ac05219e6dd1225782fda526f1ca6afd9"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac05219e6dd1225782fda526f1ca6afd9">_paused</a> = false</td></tr>
+<tr class="memitem:a984d07e3a7f8f96e8f501f4623596f85" id="r_a984d07e3a7f8f96e8f501f4623596f85"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a984d07e3a7f8f96e8f501f4623596f85">_running</a> = false</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Travel a game object along a <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html" title="This is a wrapper that treats an IArcLengthCurve as a Unity Spline. Here we mimic all of the function...">TrackFlowSpline</a>. </p>
@@ -168,6 +189,23 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9fda90a45578ccba53234fc88894c0c8" name="a9fda90a45578ccba53234fc88894c0c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fda90a45578ccba53234fc88894c0c8">&#9670;&#160;</a></span>BeginRun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.TrackFlowTraveler.BeginRun </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -247,6 +285,82 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6c3522c461e674424b935be3e985167" name="ae6c3522c461e674424b935be3e985167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c3522c461e674424b935be3e985167">&#9670;&#160;</a></span>OnValidate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.TrackFlowTraveler.OnValidate </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b8bf1aab5ae35a88354f0e532c2eaa1" name="a6b8bf1aab5ae35a88354f0e532c2eaa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8bf1aab5ae35a88354f0e532c2eaa1">&#9670;&#160;</a></span>ResetRun()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.TrackFlowTraveler.ResetRun </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b6d439e1dbe04858194f862ae9a5390" name="a3b6d439e1dbe04858194f862ae9a5390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b6d439e1dbe04858194f862ae9a5390">&#9670;&#160;</a></span>SetPaused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.TrackFlowTraveler.SetPaused </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>pause</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a96ac007c716c3f57e867956e3f502a" name="a0a96ac007c716c3f57e867956e3f502a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a96ac007c716c3f57e867956e3f502a">&#9670;&#160;</a></span>SnapToCurrentT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.TrackFlowTraveler.SnapToCurrentT </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -370,6 +484,50 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac05219e6dd1225782fda526f1ca6afd9" name="ac05219e6dd1225782fda526f1ca6afd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05219e6dd1225782fda526f1ca6afd9">&#9670;&#160;</a></span>_paused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler._paused = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a984d07e3a7f8f96e8f501f4623596f85" name="a984d07e3a7f8f96e8f501f4623596f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a984d07e3a7f8f96e8f501f4623596f85">&#9670;&#160;</a></span>_running</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler._running = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afb30e448fe33e577f6a5401d1fe1654a" name="afb30e448fe33e577f6a5401d1fe1654a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb30e448fe33e577f6a5401d1fe1654a">&#9670;&#160;</a></span>_tAccum</h2>
 
@@ -388,6 +546,56 @@ Private Attributes</h2></td></tr>
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9139a3d460d6c1cf4d16d62267d5099" name="ab9139a3d460d6c1cf4d16d62267d5099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9139a3d460d6c1cf4d16d62267d5099">&#9670;&#160;</a></span>GoOnStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler.GoOnStart = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2cc803ac296b3615e64219c03272ecd3" name="a2cc803ac296b3615e64219c03272ecd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cc803ac296b3615e64219c03272ecd3">&#9670;&#160;</a></span>invokedFinishedLoop</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler.invokedFinishedLoop = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0854df28816633266cc56cb4f4b730a0" name="a0854df28816633266cc56cb4f4b730a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0854df28816633266cc56cb4f4b730a0">&#9670;&#160;</a></span>Loop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler.Loop = false</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -451,6 +659,102 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>How long to wait before traveling along the spline, in seconds. </p>
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="a27832333ff46c1feb0d3a1cb3bcd06a4" name="a27832333ff46c1feb0d3a1cb3bcd06a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27832333ff46c1feb0d3a1cb3bcd06a4">&#9670;&#160;</a></span>IsPaused</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler.IsPaused</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3c3eda4d04a020a10db2a2701837955" name="ac3c3eda4d04a020a10db2a2701837955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3c3eda4d04a020a10db2a2701837955">&#9670;&#160;</a></span>IsRunning</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.TrackFlowTraveler.IsRunning</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cf4db1f4b691dae77df5af72beac2ec" name="a3cf4db1f4b691dae77df5af72beac2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf4db1f4b691dae77df5af72beac2ec">&#9670;&#160;</a></span>TrackT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Runtime.Core.TrackFlowTraveler.TrackT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-event-members" id="doc-event-members"></a><h2 id="header-doc-event-members" class="groupheader">Event Documentation</h2>
+<a id="a0bf255e04b21ec05d0400907f61cb7a1" name="a0bf255e04b21ec05d0400907f61cb7a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf255e04b21ec05d0400907f61cb7a1">&#9670;&#160;</a></span>OnFinishedLoop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action TrackFlowPro.Runtime.Core.TrackFlowTraveler.OnFinishedLoop</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8de460c5576b3bc087c8836983d638a" name="aa8de460c5576b3bc087c8836983d638a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8de460c5576b3bc087c8836983d638a">&#9670;&#160;</a></span>StateChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action TrackFlowPro.Runtime.Core.TrackFlowTraveler.StateChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -93,20 +93,20 @@ $(function(){initNavTree('more_info.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>This page will serve as a second glance at what exactly <span class="tt"><a class="el" href="namespace_track_flow_pro.html">TrackFlowPro</a></span> is doing under the hood.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
 What is TrackFlow Pro?</h3>
 <p>This project is designed to allow you to build 3D space curves with consistent rotation minimizing frames over their arc length. You can use it as a basis to build many different systems that rely on frame aware constructions, like roller coasters, conveyor belts, railroads, road networks, pathing data, and much more. The system features a few different addons that are useful in the construction of these systems, the main one being the TrackFlowSpawner. This component can either build an extruded mesh along the curve, or instantiate objects along the curve. Both options come with a plethora of customization configurations.</p>
-<h5 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
 <b>Frames?</b></h5>
 <blockquote class="doxtable">
 <p>The concept of frames in <span class="tt">TrackFlow Pro</span> is directly analogous to the mathematical definition of them in the context of space curves. At each point in space, the curve has a set of three basis vectors, which orient it in space. This means it defines a <em>longitudinal</em>, <em>lateral</em> and <em>vertical</em> direction at each point in space. These directions are all orthogonal to each other, and they rotate smoothly along the curve by default. </p>
 </blockquote>
-<h5 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
 <b>Where can I view them?</b></h5>
 <blockquote class="doxtable">
 <p>You can view the frames at each knot in the inspector, by selecting a <span class="tt">GameObject</span> with a <span class="tt">TrackFlowSpline</span> component on it. The blue arrow displays the tangent (longitudinal), the red arrow displays the normal (lateral) vector, and the green arrow displays the binormal (vertical). You can rotate these in the editor by holding <span class="tt">shift</span> and clicking the handles at the end of the frame vectors. Note the direction that each one will rotate the frame with. Dragging the tangent vector will rotate the frame about the normal vector, rotating the normal vector will rotate the frame about the binormal vector, and rorating the binormal vector rotates the frame about the tangent. </p>
 </blockquote>
-<h5 class="doxsection"><a class="anchor" id="autotoc_md9"></a>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
 <b>Why are they important?</b></h5>
 <blockquote class="doxtable">
 <p>By default the curve will smoothly rotate its frame orientation to match the orientation at each control point. So by rotating the curve about the binormal, you can control "up" at that point, and the curve will smoothly orient itself in that position at that point. This is controlled by the knot settings <span class="tt">StartUpMode</span>, which is by default set to <span class="tt">UseKnotB</span>, which orients the start of the segment with the given binormal vector. As well as the <span class="tt">MathNextFrame</span> setting on the knots, which smoothly orient the frame between the two knots. </p>
@@ -118,19 +118,19 @@ What is TrackFlow Pro?</h3>
 <p>In addition to the roll introduced by rotating the frame handles, you can add an additional roll modifier by clicking on any knot and opening the <span class="tt">TrackModifiers &gt; Roll Profile</span> settings menu. Here you can add a roll profile amplitude (in degrees) over the segment with an animation curve. You can control how the roll is applied over the normalized arc length of the segment by opening and editing the animation curve, by default it will roll to the amplitude value at 50% of the segment length, then smoothly roll from there to the next frame orientation. </p>
 </blockquote>
 <p>Within the <span class="tt">TrackFlowSpline</span> component the first two settings to get familiar with are visible in the inspector at <span class="tt">Settings &gt; Closed</span>, and <span class="tt">Spline Settings &gt; Use Spline</span>. The first of these do exactly what it sounds like, allows you to close the curve so it forms a loop. The second one places the <span class="tt">TrackFlowSpline</span> component into one of its two main modes: Segment Mode or Spline Mode, they both do fundamentally different things within the underlying <span class="tt">ArcFrame</span> library, which is not documented here.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md10"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
 Segment Mode</h3>
 <p>In segment mode, each control node can have its own curve type, which can be selected by clicking on the knot in the inspector and clicking the <span class="tt">CurveType</span> dropdown, or selecting one or more knots in the inspector (shift click) which opens the <span class="tt">TrackFlowSplineOverlay</span> (if not check the toolbar for a button with "TF" on it) and you can select the curve type there as well, currently one of <span class="tt">Line</span>, <span class="tt">Arc</span>, or <span class="tt">Clothoid</span>.</p>
 <p>Also in segment mode, the orientation of the control point frame controls the start tangent of the curve at that point. To rotate the knots in the editor, press <span class="tt">shift</span> and click to drag the knot</p>
-<h5 class="doxsection"><a class="anchor" id="autotoc_md11"></a>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
 <b>What if the curve looks bad?</b></h5>
 <blockquote class="doxtable">
 <p>Not all frame orientations of two knots will yield a pleasing shape, this is mainly if you are using Clothoid mode. This is because the underlying <span class="tt">ArcFrame</span> curve library has to quickly solve the clothoid parameters in real time. While <span class="tt">ArcFrame</span> is capable of drawing 2D clothoids using conventional methods (nonlinear optimization), currently we restrict <span class="tt">TrackFlowSpline</span> with using a special case of clothoid for 3D, which has a fast solution for many orientations, but not all. In the case of failure to generate valid clothoid parameters, <span class="tt">TrackFlowSpline</span> will generate a line output, many times slightly adjusting the parameters (orientation and rotation) is enough to generate a valid solution again. </p>
 </blockquote>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md12"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
 Spline Mode</h3>
 <p>When you select spline mode, the system changes from generating a specific curve type between each control point, and instead uses all of the control points to build a mathematical spline object that passes through each one. Currently <span class="tt">TrackFlow Pro</span> supports cubic <span class="tt">Bezier</span> splines or <span class="tt">Catmull-Rom</span> splines, both have their uses. Also in spline mode, knot handles will pop up in the inspector at each control point, you can drag these around to set the input and output tangents for each knot. By default the spline mode curve does not follow the frame **tangent** at each knot. This is because you need to pack the control point array with the input and output tangent handles (two extra data points), and the frame is not a go However it will follow the frame **binormal** as explained above.</p>
-<h5 class="doxsection"><a class="anchor" id="autotoc_md13"></a>
+<h5 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
 <b>Nerd Info</b></h5>
 <blockquote class="doxtable">
 <p>The curves generated by <span class="tt">TrackFlowSpline</span> come from another library I developed (<span class="tt">ArcFrame</span>) which generates points along any curve in any dimension, it can use interpolation to calculate (or solve using nonlinear optimization) the curve parameters which generate a specific type of curve between two points in N-dimensional space OR it can extrapolate intrinsic curve data, which is the curvature, torsion, their derivatives, an an arc length. </p>

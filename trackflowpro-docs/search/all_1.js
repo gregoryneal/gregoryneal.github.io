@@ -48,7 +48,7 @@ var searchData=
   ['arcs_45',['ArcS',['../struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html#a2b10b031bd434e920279de405eb04f02',1,'TrackFlowPro::Runtime::Core::Kernels::BurstSpline3d']]],
   ['arcsamplecount_46',['ArcSampleCount',['../struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html#ac3d3a3b2fe5bef043d17184deb927269',1,'TrackFlowPro::Runtime::Core::Kernels::BurstSpline3d']]],
   ['arct_47',['ArcT',['../struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html#a342cdfc0b2fa91edfcc3d881eb04bdce',1,'TrackFlowPro::Runtime::Core::Kernels::BurstSpline3d']]],
-  ['are_20they_20important_48',['&lt;b&gt;Why are they important?&lt;/b&gt;',['../more_info.html#autotoc_md9',1,'']]],
+  ['are_20they_20important_48',['&lt;b&gt;Why are they important?&lt;/b&gt;',['../more_info.html#autotoc_md3',1,'']]],
   ['autopositions_49',['AutoPositions',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#a3ef5bba0e96dfe5054ffc1a8e1631f85',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],
   ['autorebuildineditor_50',['autoRebuildInEditor',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#aa077204df82872a1f87b34de446bb459',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],
   ['autorebuildinterval_51',['autoRebuildInterval',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#af624476a868a3580649a8d0de0391add',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],

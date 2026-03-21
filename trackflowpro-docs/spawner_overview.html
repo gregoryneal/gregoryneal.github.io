@@ -120,7 +120,8 @@ Local Offset</h5>
 <p>The <span class="tt">Local Offset</span> property is a global per-sample offset of the sampled <span class="tt">Polyline</span> object, in the direction of the frame at that point. So the <span class="tt">X</span> offset is along the normal of the curve, the <span class="tt">Y</span> along the binormal and the <span class="tt">Z</span> along the tangent.</p>
 <h5 class="doxsection"><a class="anchor" id="autotoc_md18"></a>
 Snapping</h5>
-<p>The snapping tool will take the sampled <span class="tt">Polyline</span> and attempt to snap it sample by sample to any colliders not ignored by the layer mask. The spawner will attempt to smooth the frame out along the path once complete, you can control by how much within the <span class="tt">Snapping &gt; Snap Smoothing</span> submenu. </p>
+<p>The snapping tool will take the sampled <span class="tt">Polyline</span> and attempt to snap it sample by sample to any colliders not ignored by the layer mask. The spawner will attempt to smooth the frame out along the path once complete, you can control by how much within the <span class="tt">Snapping &gt; Snap Smoothing</span> submenu.</p>
+<p>Note: the snapping tool has some drawbacks associated with noisy data since it snaps on a per-sample basis. If you want to snap to a flat surface it is much preferred to manually align them, or use the Knot Placement Tool in the toolbar, which automatically snaps to collider surfaces for easy authoring. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
