@@ -103,7 +103,43 @@ Classes</h2></td></tr>
 <tr class="memitem:RoadOptions" id="r_RoadOptions"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_road_options.html">RoadOptions</a></td></tr>
 <tr class="memitem:UTrackOptions" id="r_UTrackOptions"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_u_track_options.html">UTrackOptions</a></td></tr>
 <tr class="memitem:TrackFlowSample" id="r_TrackFlowSample"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_sample.html">TrackFlowSample</a></td></tr>
+<tr class="memitem:IPolylineMutator" id="r_IPolylineMutator"><td class="memItemLeft">interface &#160;</td><td class="memItemRight"><a class="el" href="interface_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_i_polyline_mutator.html">IPolylineMutator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a contract for applyling custom mutations to a polyline.  <a href="interface_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_i_polyline_mutator.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:aec0e5582485ecd955186c20ec9712019" id="r_aec0e5582485ecd955186c20ec9712019"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#aec0e5582485ecd955186c20ec9712019">PolylineMutatorFlags</a> { <br />
+&#160;&#160;<a class="el" href="#aec0e5582485ecd955186c20ec9712019a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+, <a class="el" href="#aec0e5582485ecd955186c20ec9712019a6cdc50d53a24001de9ea7abb57485196">ModifiesPositions</a> = 1 &lt;&lt; 0
+, <a class="el" href="#aec0e5582485ecd955186c20ec9712019abf561be9982c036a7648141630750f52">ModifiesFrames</a> = 1 &lt;&lt; 1
+, <a class="el" href="#aec0e5582485ecd955186c20ec9712019a1c7699ca2c7c88d8cd16480a1b6510f4">RequiresCurvature</a> = 1 &lt;&lt; 2
+, <br />
+&#160;&#160;<a class="el" href="#aec0e5582485ecd955186c20ec9712019a0605b021c59a052b5d4ff1ae952130d1">RequiresSamples</a> = 1 &lt;&lt; 3
+<br />
+ }</td></tr>
 </table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
+<a id="aec0e5582485ecd955186c20ec9712019" name="aec0e5582485ecd955186c20ec9712019"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec0e5582485ecd955186c20ec9712019">&#9670;&#160;</a></span>PolylineMutatorFlags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aec0e5582485ecd955186c20ec9712019">TrackFlowPro.Runtime.Core.Curves.PolylineMutatorFlags</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aec0e5582485ecd955186c20ec9712019a6adf97f83acf6453d4a6a4b1070f3754" name="aec0e5582485ecd955186c20ec9712019a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec0e5582485ecd955186c20ec9712019a6cdc50d53a24001de9ea7abb57485196" name="aec0e5582485ecd955186c20ec9712019a6cdc50d53a24001de9ea7abb57485196"></a>ModifiesPositions&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec0e5582485ecd955186c20ec9712019abf561be9982c036a7648141630750f52" name="aec0e5582485ecd955186c20ec9712019abf561be9982c036a7648141630750f52"></a>ModifiesFrames&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec0e5582485ecd955186c20ec9712019a1c7699ca2c7c88d8cd16480a1b6510f4" name="aec0e5582485ecd955186c20ec9712019a1c7699ca2c7c88d8cd16480a1b6510f4"></a>RequiresCurvature&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aec0e5582485ecd955186c20ec9712019a0605b021c59a052b5d4ff1ae952130d1" name="aec0e5582485ecd955186c20ec9712019a0605b021c59a052b5d4ff1ae952130d1"></a>RequiresSamples&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

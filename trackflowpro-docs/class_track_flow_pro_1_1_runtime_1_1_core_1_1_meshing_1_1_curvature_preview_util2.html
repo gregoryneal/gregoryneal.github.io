@@ -96,12 +96,15 @@ $(function(){initNavTree('class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ed307bfdc6a35359fa8f85479add67a" id="r_a8ed307bfdc6a35359fa8f85479add67a"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[]&#160;</td><td class="memItemRight"><a class="el" href="#a8ed307bfdc6a35359fa8f85479add67a">BuildSampleData</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_compute_settings.html">ForceComputeSettings</a> settings, out float maxCurvature, out float maxTorsionAbs, out float maxGAbs)</td></tr>
+<tr class="memitem:a13bef1de21200de2e2b335f2326baeb7" id="r_a13bef1de21200de2e2b335f2326baeb7"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>&#160;</td><td class="memItemRight"><a class="el" href="#a13bef1de21200de2e2b335f2326baeb7">SampleAtS</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[] samples, double[] sArray, float sMeters, bool closed)</td></tr>
 <tr class="memitem:a24825079c0d05f6922e2dedb17828157" id="r_a24825079c0d05f6922e2dedb17828157"><td class="memItemLeft">static Color32&#160;</td><td class="memItemRight"><a class="el" href="#a24825079c0d05f6922e2dedb17828157">ColorFromSample</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a> sd, <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_preview_settings.html">ForcePreviewSettings</a> settings, float maxCurvature, float maxTorsionAbs, float maxGAbs, float maxGForwardAbs=0f, float maxGLateralAbs=0f, float maxGVerticalAbs=0f)</td></tr>
 <tr class="memitem:a9c7775a4f7ef9f07a011612f1f4de802" id="r_a9c7775a4f7ef9f07a011612f1f4de802"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a9c7775a4f7ef9f07a011612f1f4de802">ComputeBankAngles</a> (Vector3 T, Vector3 B, Vector3 gravityWS, out float absDeg, out float signedDeg)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a2ad4a5c7169c050707f017bf914a3e8d" id="r_a2ad4a5c7169c050707f017bf914a3e8d"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a2ad4a5c7169c050707f017bf914a3e8d">EstimateGeometricTorsionRadPerM</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, double[] S, int i)</td></tr>
 <tr class="memitem:adb1ffeb0342dd774e425a9996064d346" id="r_adb1ffeb0342dd774e425a9996064d346"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#adb1ffeb0342dd774e425a9996064d346">EstimateTwistRateRadPerM</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, double[] S, int i)</td></tr>
+<tr class="memitem:aa8effc8c5c5eda163c4be58fd9a83b38" id="r_aa8effc8c5c5eda163c4be58fd9a83b38"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa8effc8c5c5eda163c4be58fd9a83b38">LerpSample</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a> a, <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a> b, float t)</td></tr>
 <tr class="memitem:a86591ef07be2373666e99069c4370ba9" id="r_a86591ef07be2373666e99069c4370ba9"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a86591ef07be2373666e99069c4370ba9">ResolveGMax</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_preview_settings.html">ForcePreviewSettings</a> settings, float gMaxGlobal, float gMaxAxis)</td></tr>
 <tr class="memitem:a4833c3e08afd421e13103606d7212600" id="r_a4833c3e08afd421e13103606d7212600"><td class="memItemLeft">static Color&#160;</td><td class="memItemRight"><a class="el" href="#a4833c3e08afd421e13103606d7212600">EvalGradient</a> (float value, float maxAbs, Gradient gradient, bool centerOnZero)</td></tr>
 <tr class="memdesc:a4833c3e08afd421e13103606d7212600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate a color gradient based on a value and max abs, with optional center mapping. With centerOnZero = false, map |value| ∈ [0, maxAbs] -&gt; [0, 1] on the gradient. With centerOnZero = true, map value ∈ [-maxAbs, maxAbs] -&gt; [0, 1] on the gradient.  <br /></td></tr>
@@ -434,6 +437,40 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2ad4a5c7169c050707f017bf914a3e8d" name="a2ad4a5c7169c050707f017bf914a3e8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad4a5c7169c050707f017bf914a3e8d">&#9670;&#160;</a></span>EstimateGeometricTorsionRadPerM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Runtime.Core.Meshing.CurvaturePreviewUtil2.EstimateGeometricTorsionRadPerM </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a></td>          <td class="paramname"><span class="paramname"><em>poly</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double[]</td>          <td class="paramname"><span class="paramname"><em>S</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adb1ffeb0342dd774e425a9996064d346" name="adb1ffeb0342dd774e425a9996064d346"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb1ffeb0342dd774e425a9996064d346">&#9670;&#160;</a></span>EstimateTwistRateRadPerM()</h2>
 
@@ -519,6 +556,40 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa8effc8c5c5eda163c4be58fd9a83b38" name="aa8effc8c5c5eda163c4be58fd9a83b38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8effc8c5c5eda163c4be58fd9a83b38">&#9670;&#160;</a></span>LerpSample()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a> TrackFlowPro.Runtime.Core.Meshing.CurvaturePreviewUtil2.LerpSample </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a></td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a></td>          <td class="paramname"><span class="paramname"><em>b</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>t</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a86591ef07be2373666e99069c4370ba9" name="a86591ef07be2373666e99069c4370ba9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86591ef07be2373666e99069c4370ba9">&#9670;&#160;</a></span>ResolveGMax()</h2>
 
@@ -547,6 +618,45 @@ Static Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a13bef1de21200de2e2b335f2326baeb7" name="a13bef1de21200de2e2b335f2326baeb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13bef1de21200de2e2b335f2326baeb7">&#9670;&#160;</a></span>SampleAtS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a> TrackFlowPro.Runtime.Core.Meshing.CurvaturePreviewUtil2.SampleAtS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[]</td>          <td class="paramname"><span class="paramname"><em>samples</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double[]</td>          <td class="paramname"><span class="paramname"><em>sArray</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sMeters</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>closed</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

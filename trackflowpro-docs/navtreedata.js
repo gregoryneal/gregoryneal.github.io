@@ -26,6 +26,7 @@ var NAVTREE =
 [
   [ "TrackFlow Pro Documentation", "index.html", [
     [ "Welcome", "index.html", null ],
+    [ "Curve Spec Mode", "curve_spec_mode.html", null ],
     [ "Detailed Information", "more_info.html", null ],
     [ "Spawner System", "spawner_overview.html", null ],
     [ "Tool Overview", "tool_overview.html", null ],
@@ -50,11 +51,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Enumerations", "globals_enum.html", null ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -62,17 +59,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_arc_frame_bridge_8cs.html",
-"class_track_flow_pro_1_1_editor_1_1_track_flow_hover_probe.html#a277eea55735de3da36cf55e6d985dc29",
-"class_track_flow_pro_1_1_editor_1_1_track_flow_screen_pick_util.html#acd72438e0b62f62dbafa706d47263f33a32a6af166771d69c2b327731269be4f9",
-"class_track_flow_pro_1_1_runtime_1_1_arc_options.html#a5f9787cb7a3edf2a7404b37d2ce7cda9",
-"class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_tube_options.html#ae57d7a2bfe776ca8d01d97b925c75ffe",
-"class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cross_section_profile2_d.html#ad61e924fd6972a991904d3e70e55cd74",
-"class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner.html",
-"class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner_1_1_custom_profile_options.html#a476907a7944f63c1de37b701839bdf98",
-"class_track_flow_pro_1_1_runtime_1_1_linear_law_params.html#aa29b33699de099faff35f612f9c62029",
-"interface_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_i_track_mesh_builder.html#a3581fdde6eae091bf44be5864fdc7ec0",
-"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_curve_sample3d.html#a7002d2af73483d8bbd644c6c06957128",
-"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html#a76bec0967a6fb8a0781c6bcd856a49ca"
+"class_track_flow_pro_1_1_editor_1_1_track_flow_editor_selection.html#ab975ca15cfcbc46af4a1db42ef65761c",
+"class_track_flow_pro_1_1_editor_1_1_track_flow_place_knots_toggle.html#a5509c15c7c4d9da17e5871dbfe366eb1",
+"class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor_1_1_control_point_accordion_row.html#a183af9246abd26eb3141482b66c8732d",
+"class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#a5e5bb8e208358126dc24f38c3632592c",
+"class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_start_up_align_modifier.html#a61981eaf81a0d32f4bf672967c465447",
+"class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_preview_settings.html#a84d229e83220301ff6a77e76a5dfe7b1",
+"class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner.html#a5666e20d6183bcbc3f3acfb983e561bf",
+"class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a5993dd860eb58c28993b60ddd5838d5b",
+"class_track_flow_pro_1_1_runtime_1_1_track_flow_knot.html#abb93481725dafdcc0d980ab691795783",
+"namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a1754f6588249416eeed3bc79b0189a5ea0f0ee237577e1f2ea50061ccdf3352c0",
+"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_burst_spline3d.html#a2b10b031bd434e920279de405eb04f02",
+"struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_force_compute_settings.html#abfd8ff7b9247897d2a9d848e7f2bdef2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

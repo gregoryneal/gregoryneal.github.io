@@ -99,11 +99,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ed77ec350a032d90cc9c27c2e636eea" id="r_a4ed77ec350a032d90cc9c27c2e636eea"><td class="memItemLeft">static List&lt; float &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a4ed77ec350a032d90cc9c27c2e636eea">BuildUniformRingSValues</a> (double totalLenD, float minSpacing, float maxSpacing, bool closed)</td></tr>
 <tr class="memitem:ad87f13a9fef5b5e04ae818869c21e3da" id="r_ad87f13a9fef5b5e04ae818869c21e3da"><td class="memItemLeft">static List&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad87f13a9fef5b5e04ae818869c21e3da">BuildUniformRingIndicesByArcLength</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, float stepMeters=<a class="el" href="#a35cb701480fdbb4cea34da78f2b76e59">DefaultMinRingSpacing</a>, float maxStepMeters=<a class="el" href="#a7dd29e5db4bdb11236dbcea3112b659d">DefaultMaxRingSpacing</a>, bool includeLastForOpen=true, float phase01=0f)</td></tr>
 <tr class="memitem:ab23474af5410d9b9f3cee2ef9c69baa4" id="r_ab23474af5410d9b9f3cee2ef9c69baa4"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab23474af5410d9b9f3cee2ef9c69baa4">ToLocalSpace</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> worldPoly, Transform space)</td></tr>
 <tr class="memdesc:ab23474af5410d9b9f3cee2ef9c69baa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a world-space polyline (P and R) into local space of <em>space</em> . S and K are passed through unchanged.  <br /></td></tr>
 <tr class="memitem:ae552d03c40671e7f8f2346c203d8e57e" id="r_ae552d03c40671e7f8f2346c203d8e57e"><td class="memItemLeft">static List&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ae552d03c40671e7f8f2346c203d8e57e">BuildRingIndices</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, float minRingSpacing=<a class="el" href="#a35cb701480fdbb4cea34da78f2b76e59">DefaultMinRingSpacing</a>)</td></tr>
-<tr class="memdesc:ae552d03c40671e7f8f2346c203d8e57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds ring indices approximately uniformly by arc-length with spacing constraints.  <br /></td></tr>
+<tr class="memdesc:ae552d03c40671e7f8f2346c203d8e57e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a list of sample indices to use as rings, skipping any samples that are closer than MinRingSpacing to the last kept ring. This removes duplicate/near-duplicate rings at segment junctions.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -138,11 +139,6 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Builds ring indices approximately uniformly by arc-length with spacing constraints. </p>
-<ul>
-<li>If minStep == maxStep, this behaves like strict uniform stepping.</li>
-<li>If the underlying polyline is already coarse, this cannot insert new samples; it only selects indices.</li>
-</ul>
 <p>Build a list of sample indices to use as rings, skipping any samples that are closer than MinRingSpacing to the last kept ring. This removes duplicate/near-duplicate rings at segment junctions. </p>
 
 </div>
@@ -180,6 +176,45 @@ Static Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>phase01</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0f</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ed77ec350a032d90cc9c27c2e636eea" name="a4ed77ec350a032d90cc9c27c2e636eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ed77ec350a032d90cc9c27c2e636eea">&#9670;&#160;</a></span>BuildUniformRingSValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt; float &gt; TrackFlowPro.Runtime.Core.Meshing.MeshingUtils.BuildUniformRingSValues </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>totalLenD</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>minSpacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>maxSpacing</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>closed</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

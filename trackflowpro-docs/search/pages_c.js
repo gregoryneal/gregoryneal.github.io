@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['object_20mode_0',['Object Mode',['../spawner_overview.html#autotoc_md15',1,'']]],
-  ['offset_1',['Local Offset',['../spawner_overview.html#autotoc_md17',1,'']]],
-  ['overview_2',['Tool Overview',['../tool_overview.html',1,'']]]
+  ['local_20offset_0',['Local Offset',['../spawner_overview.html#autotoc_md25',1,'']]],
+  ['looks_20bad_1',['&lt;b&gt;What if the curve looks bad?&lt;/b&gt;',['../more_info.html#autotoc_md13',1,'']]],
+  ['loop_20for_20roller_20coasters_2',['How to create a clothoid loop for roller coasters.',['../curve_spec_mode.html#autotoc_md0',1,'']]],
+  ['loop_20segments_3',['Loop Segments',['../curve_spec_mode.html#autotoc_md3',1,'']]]
 ];

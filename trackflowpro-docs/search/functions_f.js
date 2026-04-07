@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['patchrecalculatenormalsseams_0',['PatchRecalculateNormalsSeams',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder.html#ad72f9e9de9cbcc613bc1ec933a1c459f',1,'TrackFlowPro::Runtime::Core::Meshing::PolylineExtruder']]],
-  ['pickvertex_1',['PickVertex',['../class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor.html#a7d933754cfc35abd1eb61a523e00dd7a',1,'TrackFlowPro::Editor::TrackFlowSpawnerEditor']]],
-  ['placenewknot_2',['PlaceNewKnot',['../class_track_flow_pro_1_1_editor_1_1_track_flow_place_knot_tool.html#ae27973ca9819ff9b244636698461562c',1,'TrackFlowPro::Editor::TrackFlowPlaceKnotTool']]],
-  ['pointintri_3',['PointInTri',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder.html#a8f23aa270b51f4c222d7285c2bf28191',1,'TrackFlowPro::Runtime::Core::Meshing::PolylineExtruder']]],
+  ['pickvertex_0',['PickVertex',['../class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor.html#a7d933754cfc35abd1eb61a523e00dd7a',1,'TrackFlowPro::Editor::TrackFlowSpawnerEditor']]],
+  ['placenewknot_1',['PlaceNewKnot',['../class_track_flow_pro_1_1_editor_1_1_track_flow_place_knot_tool.html#ae27973ca9819ff9b244636698461562c',1,'TrackFlowPro::Editor::TrackFlowPlaceKnotTool']]],
+  ['pointintri_2',['PointInTri',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder.html#a8f23aa270b51f4c222d7285c2bf28191',1,'TrackFlowPro::Runtime::Core::Meshing::PolylineExtruder']]],
+  ['pointtosegmentdistance_3',['PointToSegmentDistance',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a41911529147190e364bc918bd54d3e39',1,'TrackFlowPro::Runtime::Core::Sampling::ChordErrorSampler']]],
   ['polylinemutator_4',['PolylineMutator',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#ac848911bc4bb0b30f38a6970ee2f3a5f',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],
   ['populateforcepreviewspeedprofilewithknotkeyframes_5',['PopulateForcePreviewSpeedProfileWithKnotKeyframes',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#aa587a0c6191c736f585ef366cf998971',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],
   ['preparebezierpoints3dfromknots_6',['PrepareBezierPoints3DFromKnots',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#a29913c5a225f7c80d20ca25a65eca506',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['are_20they_20important_0',['&lt;b&gt;Why are they important?&lt;/b&gt;',['../more_info.html#autotoc_md3',1,'']]]
+  ['1_0',['Segment 1',['../curve_spec_mode.html#autotoc_md4',1,'']]]
 ];

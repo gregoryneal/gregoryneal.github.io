@@ -86,7 +86,7 @@ var hierarchy =
       [ "TrackFlowPro.Runtime.Core.Kernels.SampleSplineJob", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_sample_spline_job.html", null ],
       [ "TrackFlowPro.Runtime.Core.Kernels.SampleSplineJob2", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_kernels_1_1_sample_spline_job2.html", null ]
     ] ],
-    [ "IPolylineMutator", "interface_i_polyline_mutator.html", null ],
+    [ "TrackFlowPro.Runtime.Core.Curves.IPolylineMutator", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_i_polyline_mutator.html", null ],
     [ "TrackFlowPro.Runtime.Core.Frames.IRollLaw", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_roll_law.html", null ],
     [ "TrackFlowPro.Runtime.Core.Frames.ITrackFrameModifier", "interface_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_i_track_frame_modifier.html", [
       [ "TrackFlowPro.Runtime.Core.Frames.FrameCleanupModifier", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_frame_cleanup_modifier.html", null ],
@@ -139,7 +139,11 @@ var hierarchy =
       [ "TrackFlowPro.Runtime.Core.Meshing.CrossSectionProfile2DAsset", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_cross_section_profile2_d_asset.html", null ],
       [ "TrackFlowPro.Runtime.CurvatureFunctionAsset", "class_track_flow_pro_1_1_runtime_1_1_curvature_function_asset.html", null ]
     ] ],
+    [ "ScriptableSingleton", null, [
+      [ "TrackFlowPro.Editor.TrackFlowEditorPreferences", "class_track_flow_pro_1_1_editor_1_1_track_flow_editor_preferences.html", null ]
+    ] ],
     [ "TrackFlowPro.Editor.Readme.Section", "class_track_flow_pro_1_1_editor_1_1_readme_1_1_section.html", null ],
+    [ "TrackFlowPro.Runtime.Core.Curves.TrackFlowSpline.SegmentBuildState", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline_1_1_segment_build_state.html", null ],
     [ "TrackFlowPro.Runtime.Core.Frames.SegmentContext", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_segment_context.html", null ],
     [ "TrackFlowPro.Runtime.Core.Frames.SegmentSpan", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_segment_span.html", null ],
     [ "TrackFlowPro.Runtime.Core.Meshing.PolylineExtruder.ShellSpec", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html", null ],
@@ -152,16 +156,21 @@ var hierarchy =
     ] ],
     [ "TrackFlowPro.Runtime.Core.Frames.TrackContext", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_track_context.html", null ],
     [ "TrackFlowPro.Editor.TrackFlowBezierHandleEditorUtil", "class_track_flow_pro_1_1_editor_1_1_track_flow_bezier_handle_editor_util.html", null ],
+    [ "TrackFlowPro.Editor.TrackFlowEditorPreferencesProvider", "class_track_flow_pro_1_1_editor_1_1_track_flow_editor_preferences_provider.html", null ],
     [ "TrackFlowPro.Editor.TrackFlowEditorSelection", "class_track_flow_pro_1_1_editor_1_1_track_flow_editor_selection.html", null ],
+    [ "TrackFlowPro.Editor.TrackFlowKnotDrawerUI", "class_track_flow_pro_1_1_editor_1_1_track_flow_knot_drawer_u_i.html", null ],
     [ "TrackFlowPro.Editor.TrackFlowMeshPrefabExporter", "class_track_flow_pro_1_1_editor_1_1_track_flow_mesh_prefab_exporter.html", null ],
     [ "TrackFlowPro.Runtime.Core.Curves.TrackFlowProfilerMarkers", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_profiler_markers.html", null ],
     [ "TrackFlowPro.Editor.TrackFlowProPrefabSpawner", "class_track_flow_pro_1_1_editor_1_1_track_flow_pro_prefab_spawner.html", null ],
     [ "TrackFlowPro.Runtime.Core.Curves.TrackFlowSample", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_sample.html", null ],
     [ "TrackFlowPro.Editor.TrackFlowScreenPickUtil", "class_track_flow_pro_1_1_editor_1_1_track_flow_screen_pick_util.html", null ],
+    [ "TrackFlowPro.Editor.TrackFlowSplineAppendUtility", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_append_utility.html", null ],
     [ "TrackFlowPro.Runtime.Core.TravelerOffset", "struct_track_flow_pro_1_1_runtime_1_1_core_1_1_traveler_offset.html", null ],
     [ "TrackFlowPro.Runtime.Core.Curves.TubeOptions", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_tube_options.html", null ],
     [ "TrackFlowPro.Runtime.Core.Curves.UTrackOptions", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_u_track_options.html", null ],
     [ "VisualElement", null, [
-      [ "TrackFlowPro.Editor.SerializeReferenceListField", "class_track_flow_pro_1_1_editor_1_1_serialize_reference_list_field.html", null ]
+      [ "TrackFlowPro.Editor.SerializeReferenceListField", "class_track_flow_pro_1_1_editor_1_1_serialize_reference_list_field.html", null ],
+      [ "TrackFlowPro.Editor.TrackFlowSplineEditor.ControlPointAccordionRow", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor_1_1_control_point_accordion_row.html", null ],
+      [ "TrackFlowPro.Editor.TrackFlowSplineEditor.KnotListRow", "class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor_1_1_knot_list_row.html", null ]
     ] ]
 ];

@@ -116,9 +116,7 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a941201485b2935628ec856d59ce7df7e" id="r_a941201485b2935628ec856d59ce7df7e"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a941201485b2935628ec856d59ce7df7e">ToV3</a> (double[] p)</td></tr>
 <tr class="memitem:a7ef46948851ad4efef0af1a3b34ffdf6" id="r_a7ef46948851ad4efef0af1a3b34ffdf6"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a7ef46948851ad4efef0af1a3b34ffdf6">ProjPlane</a> (Vector3 v, Vector3 n)</td></tr>
 <tr class="memitem:acf746bb92df9d3855f10e85a27162586" id="r_acf746bb92df9d3855f10e85a27162586"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#acf746bb92df9d3855f10e85a27162586">ComputeRobustTangent</a> (ref <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, int i)</td></tr>
-<tr class="memitem:aee098aea58ba26b40cc9f2c78e046f3b" id="r_aee098aea58ba26b40cc9f2c78e046f3b"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aee098aea58ba26b40cc9f2c78e046f3b">BuildTangentsAndSeedFrame0</a> (ref <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, in <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_track_context.html">TrackContext</a> trackCtx, in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_post_deform_frame_pipeline_1_1_hints.html">Hints</a> hints, in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_post_deform_frame_pipeline_1_1_options.html">Options</a> opt)</td></tr>
 <tr class="memitem:a8d4d6221cf8d02d2e2226333c9cd7d58" id="r_a8d4d6221cf8d02d2e2226333c9cd7d58"><td class="memItemLeft">static Vector3[]&#160;</td><td class="memItemRight"><a class="el" href="#a8d4d6221cf8d02d2e2226333c9cd7d58">SmoothDirectionField</a> (Vector3[] dirs, int window, bool closed)</td></tr>
-<tr class="memitem:ad1648959e6f05f8acf57d07a0eea1274" id="r_ad1648959e6f05f8acf57d07a0eea1274"><td class="memItemLeft">static Vector3[]&#160;</td><td class="memItemRight"><a class="el" href="#ad1648959e6f05f8acf57d07a0eea1274">SmoothUpHints</a> (Vector3[] upHints, int window)</td></tr>
 <tr class="memitem:a4e1fe4272bf05c2942c06fe5f12a8863" id="r_a4e1fe4272bf05c2942c06fe5f12a8863"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a4e1fe4272bf05c2942c06fe5f12a8863">ApplyUpHintFollow</a> (ref <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, Vector3[] upHintsSmoothed, float strength01, float maxDegPerMeter)</td></tr>
 <tr class="memitem:a8a5a49e2b712b7e2cca9bd823c642454" id="r_a8a5a49e2b712b7e2cca9bd823c642454"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a8a5a49e2b712b7e2cca9bd823c642454">EnforceClosedTwist</a> (ref <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly)</td></tr>
 <tr class="memitem:a62ea210587d177c709c315e8ff562da8" id="r_a62ea210587d177c709c315e8ff562da8"><td class="memItemLeft">static Vector3[]&#160;</td><td class="memItemRight"><a class="el" href="#a62ea210587d177c709c315e8ff562da8">SmoothPositionsOverSurface</a> (Vector3[] p0, Vector3[] upWS, bool closed, float smooth01, int maxIters=12, float maxLambda=0.45f, int upSmoothWindow=3)</td></tr>
@@ -152,45 +150,6 @@ Static Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>maxDegPerMeter</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee098aea58ba26b40cc9f2c78e046f3b" name="aee098aea58ba26b40cc9f2c78e046f3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee098aea58ba26b40cc9f2c78e046f3b">&#9670;&#160;</a></span>BuildTangentsAndSeedFrame0()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TrackFlowPro.Runtime.Core.Frames.PostDeformFramePipeline.BuildTangentsAndSeedFrame0 </td>
-          <td>(</td>
-          <td class="paramtype">ref <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a></td>          <td class="paramname"><span class="paramname"><em>poly</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">in <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_track_context.html">TrackContext</a></td>          <td class="paramname"><span class="paramname"><em>trackCtx</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_post_deform_frame_pipeline_1_1_hints.html">Hints</a></td>          <td class="paramname"><span class="paramname"><em>hints</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_post_deform_frame_pipeline_1_1_options.html">Options</a></td>          <td class="paramname"><span class="paramname"><em>opt</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -517,35 +476,6 @@ Static Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>upSmoothWindow</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad1648959e6f05f8acf57d07a0eea1274" name="ad1648959e6f05f8acf57d07a0eea1274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1648959e6f05f8acf57d07a0eea1274">&#9670;&#160;</a></span>SmoothUpHints()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3[] TrackFlowPro.Runtime.Core.Frames.PostDeformFramePipeline.SmoothUpHints </td>
-          <td>(</td>
-          <td class="paramtype">Vector3[]</td>          <td class="paramname"><span class="paramname"><em>upHints</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>window</em></span>&#160;)</td>
         </tr>
       </table>
   </td>

@@ -98,10 +98,10 @@ $(function(){initNavTree('class_track_flow_pro_1_1_runtime_1_1_track_flow_knot.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4facf19a5f19f5a32bc764eaa739c01" id="r_ae4facf19a5f19f5a32bc764eaa739c01"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae4facf19a5f19f5a32bc764eaa739c01">EnsureLocalFrame</a> ()</td></tr>
-<tr class="memdesc:ae4facf19a5f19f5a32bc764eaa739c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert legacy WS frame into local storage once we have a Parent transform.  <br /></td></tr>
+<tr class="memitem:a780a76360e9693cb56b566595aabffe1" id="r_a780a76360e9693cb56b566595aabffe1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a780a76360e9693cb56b566595aabffe1">SetWorldFrame</a> (Vector3 t, Vector3 n, Vector3 b)</td></tr>
 <tr class="memitem:a3cf5041a6ce94ae6d5d13c1765df360a" id="r_a3cf5041a6ce94ae6d5d13c1765df360a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a3cf5041a6ce94ae6d5d13c1765df360a">TrackFlowKnot</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> parent)</td></tr>
 <tr class="memitem:a0ddbabbd7f7e65fab6afc51212f4ebae" id="r_a0ddbabbd7f7e65fab6afc51212f4ebae"><td class="memItemLeft">object&#160;</td><td class="memItemRight"><a class="el" href="#a0ddbabbd7f7e65fab6afc51212f4ebae">Clone</a> ()</td></tr>
+<tr class="memitem:a9acfe00acfa960a8eed7b6512b4b09af" id="r_a9acfe00acfa960a8eed7b6512b4b09af"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9acfe00acfa960a8eed7b6512b4b09af">AlignBezierHandlesAtLength</a> (float length)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -109,6 +109,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9f3a8279809305c70674218f1a6c8240" id="r_a9f3a8279809305c70674218f1a6c8240"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a9f3a8279809305c70674218f1a6c8240">T_LS</a> = Vector3.forward</td></tr>
 <tr class="memitem:afdb2d6f331bb75389310a8388692b0a6" id="r_afdb2d6f331bb75389310a8388692b0a6"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#afdb2d6f331bb75389310a8388692b0a6">N_LS</a> = Vector3.right</td></tr>
 <tr class="memitem:a4088d08523da3f8e802ecebd7c189a64" id="r_a4088d08523da3f8e802ecebd7c189a64"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a4088d08523da3f8e802ecebd7c189a64">B_LS</a> = Vector3.up</td></tr>
+<tr class="memitem:a436f56374ffcdf50883ce86a80c93288" id="r_a436f56374ffcdf50883ce86a80c93288"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a436f56374ffcdf50883ce86a80c93288">drivenRollDegrees</a> = 0f</td></tr>
 <tr class="memitem:a5b4aa9113bf9cddf7c4f950e6c332c9f" id="r_a5b4aa9113bf9cddf7c4f950e6c332c9f"><td class="memItemLeft"><a class="el" href="namespace_track_flow_pro_1_1_runtime.html#a0f31ec5e8cfea19251c1920313838cbb">TrackFlowCurveType</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5b4aa9113bf9cddf7c4f950e6c332c9f">curveType</a> = <a class="el" href="namespace_track_flow_pro_1_1_runtime.html#a0f31ec5e8cfea19251c1920313838cbba4803e6b9e63dabf04de980788d6a13c4">TrackFlowCurveType.Line</a></td></tr>
 <tr class="memitem:a810b69a5b903c66516fe7f9d3b1812ef" id="r_a810b69a5b903c66516fe7f9d3b1812ef"><td class="memItemLeft"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_arc_options.html">ArcOptions</a>&#160;</td><td class="memItemRight"><a class="el" href="#a810b69a5b903c66516fe7f9d3b1812ef">arc</a> = new()</td></tr>
 <tr class="memitem:a6e44abee87a79b5f889706137cfee493" id="r_a6e44abee87a79b5f889706137cfee493"><td class="memItemLeft"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_clothoid_options.html">ClothoidOptions</a>&#160;</td><td class="memItemRight"><a class="el" href="#a6e44abee87a79b5f889706137cfee493">clothoid</a> = new()</td></tr>
@@ -128,17 +129,6 @@ Properties</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ae6c99de0a665ed2b2d8f7b1195526570" id="r_ae6c99de0a665ed2b2d8f7b1195526570"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae6c99de0a665ed2b2d8f7b1195526570">OrthonormalizeLocal</a> ()</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a94c5262c3388c0045c4c4ac3d25de99b" id="r_a94c5262c3388c0045c4c4ac3d25de99b"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a94c5262c3388c0045c4c4ac3d25de99b">_legacyT_WS</a> = Vector3.forward</td></tr>
-<tr class="memitem:a53d6ec27dd594659e8cda4fb895a8349" id="r_a53d6ec27dd594659e8cda4fb895a8349"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a53d6ec27dd594659e8cda4fb895a8349">_legacyN_WS</a> = Vector3.right</td></tr>
-<tr class="memitem:ab2f128e0c7f4d7fbfbb86563ea2956bc" id="r_ab2f128e0c7f4d7fbfbb86563ea2956bc"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#ab2f128e0c7f4d7fbfbb86563ea2956bc">_legacyB_WS</a> = Vector3.up</td></tr>
-<tr class="memitem:a18a1cbd6e6754718d647bc567f6f99c7" id="r_a18a1cbd6e6754718d647bc567f6f99c7"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a18a1cbd6e6754718d647bc567f6f99c7">_frameSpaceVersion</a> = 0</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:afc5bff9ac848e9c665c6aa54572aa824" id="r_afc5bff9ac848e9c665c6aa54572aa824"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#afc5bff9ac848e9c665c6aa54572aa824">FrameSpace_Local</a> = 1</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A single knot in your TrackFlow spline editor. "Curve Type" governs the segment between this knot and the next knot. </p>
@@ -161,6 +151,23 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a9acfe00acfa960a8eed7b6512b4b09af" name="a9acfe00acfa960a8eed7b6512b4b09af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9acfe00acfa960a8eed7b6512b4b09af">&#9670;&#160;</a></span>AlignBezierHandlesAtLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.TrackFlowKnot.AlignBezierHandlesAtLength </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>length</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0ddbabbd7f7e65fab6afc51212f4ebae" name="a0ddbabbd7f7e65fab6afc51212f4ebae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ddbabbd7f7e65fab6afc51212f4ebae">&#9670;&#160;</a></span>Clone()</h2>
 
@@ -175,25 +182,6 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4facf19a5f19f5a32bc764eaa739c01" name="ae4facf19a5f19f5a32bc764eaa739c01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4facf19a5f19f5a32bc764eaa739c01">&#9670;&#160;</a></span>EnsureLocalFrame()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TrackFlowPro.Runtime.TrackFlowKnot.EnsureLocalFrame </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert legacy WS frame into local storage once we have a Parent transform. </p>
 
 </div>
 </div>
@@ -222,95 +210,33 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a780a76360e9693cb56b566595aabffe1" name="a780a76360e9693cb56b566595aabffe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780a76360e9693cb56b566595aabffe1">&#9670;&#160;</a></span>SetWorldFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.TrackFlowKnot.SetWorldFrame </td>
+          <td>(</td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a18a1cbd6e6754718d647bc567f6f99c7" name="a18a1cbd6e6754718d647bc567f6f99c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18a1cbd6e6754718d647bc567f6f99c7">&#9670;&#160;</a></span>_frameSpaceVersion</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int TrackFlowPro.Runtime.TrackFlowKnot._frameSpaceVersion = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab2f128e0c7f4d7fbfbb86563ea2956bc" name="ab2f128e0c7f4d7fbfbb86563ea2956bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2f128e0c7f4d7fbfbb86563ea2956bc">&#9670;&#160;</a></span>_legacyB_WS</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3 TrackFlowPro.Runtime.TrackFlowKnot._legacyB_WS = Vector3.up</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a53d6ec27dd594659e8cda4fb895a8349" name="a53d6ec27dd594659e8cda4fb895a8349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53d6ec27dd594659e8cda4fb895a8349">&#9670;&#160;</a></span>_legacyN_WS</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3 TrackFlowPro.Runtime.TrackFlowKnot._legacyN_WS = Vector3.right</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a94c5262c3388c0045c4c4ac3d25de99b" name="a94c5262c3388c0045c4c4ac3d25de99b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94c5262c3388c0045c4c4ac3d25de99b">&#9670;&#160;</a></span>_legacyT_WS</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Vector3 TrackFlowPro.Runtime.TrackFlowKnot._legacyT_WS = Vector3.forward</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a810b69a5b903c66516fe7f9d3b1812ef" name="a810b69a5b903c66516fe7f9d3b1812ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a810b69a5b903c66516fe7f9d3b1812ef">&#9670;&#160;</a></span>arc</h2>
 
@@ -409,24 +335,16 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afc5bff9ac848e9c665c6aa54572aa824" name="afc5bff9ac848e9c665c6aa54572aa824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc5bff9ac848e9c665c6aa54572aa824">&#9670;&#160;</a></span>FrameSpace_Local</h2>
+<a id="a436f56374ffcdf50883ce86a80c93288" name="a436f56374ffcdf50883ce86a80c93288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436f56374ffcdf50883ce86a80c93288">&#9670;&#160;</a></span>drivenRollDegrees</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const int TrackFlowPro.Runtime.TrackFlowKnot.FrameSpace_Local = 1</td>
+          <td class="memname">float TrackFlowPro.Runtime.TrackFlowKnot.drivenRollDegrees = 0f</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

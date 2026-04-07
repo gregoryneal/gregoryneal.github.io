@@ -105,7 +105,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:aeb0c305da031f85f46289b2eb292ca5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write T/N/B columns from a quaternion (x→T, y→N, z→B).  <br /></td></tr>
 <tr class="memitem:af81952f8def6af0d6fdc188f8e6334d6" id="r_af81952f8def6af0d6fdc188f8e6334d6"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#af81952f8def6af0d6fdc188f8e6334d6">ToV3</a> (double[] p)</td></tr>
 <tr class="memitem:ab3496e478ddc4760d63a755e9b3e82bc" id="r_ab3496e478ddc4760d63a755e9b3e82bc"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#ab3496e478ddc4760d63a755e9b3e82bc">ProjPlane</a> (Vector3 v, Vector3 n)</td></tr>
-<tr class="memitem:a8146b8a42d4a4fcf4024250ed11dffd6" id="r_a8146b8a42d4a4fcf4024250ed11dffd6"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a8146b8a42d4a4fcf4024250ed11dffd6">SignedAngleAroundAxis</a> (Vector3 from, Vector3 to, Vector3 axis)</td></tr>
+<tr class="memitem:a00fdaec65899f840c0dbb9b0e1f21037" id="r_a00fdaec65899f840c0dbb9b0e1f21037"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a00fdaec65899f840c0dbb9b0e1f21037">SignedAngleAroundAxisRad</a> (Vector3 from, Vector3 to, Vector3 axis)</td></tr>
+<tr class="memitem:a5c752911e40afe6c1ff0f5af85182d98" id="r_a5c752911e40afe6c1ff0f5af85182d98"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a5c752911e40afe6c1ff0f5af85182d98">SignedAngleAroundAxisDeg</a> (Vector3 from, Vector3 to, Vector3 axis)</td></tr>
 <tr class="memitem:abc5b0d1d9b1b68038f6c13c540e6b066" id="r_abc5b0d1d9b1b68038f6c13c540e6b066"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#abc5b0d1d9b1b68038f6c13c540e6b066">RotateNBAboutT</a> (double[,] R, float theta)</td></tr>
 <tr class="memitem:a38c6969901665dcc5cac9289f5f225c1" id="r_a38c6969901665dcc5cac9289f5f225c1"><td class="memItemLeft">static float[]&#160;</td><td class="memItemRight"><a class="el" href="#a38c6969901665dcc5cac9289f5f225c1">SmoothData</a> (float[] data, int windowLength, bool isClosed, out float minSmoothedValue, out float maxSmoothedValue)</td></tr>
 <tr class="memdesc:a38c6969901665dcc5cac9289f5f225c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform moving average smoothing on data.  <br /></td></tr>
@@ -304,8 +305,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8146b8a42d4a4fcf4024250ed11dffd6" name="a8146b8a42d4a4fcf4024250ed11dffd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8146b8a42d4a4fcf4024250ed11dffd6">&#9670;&#160;</a></span>SignedAngleAroundAxis()</h2>
+<a id="a5c752911e40afe6c1ff0f5af85182d98" name="a5c752911e40afe6c1ff0f5af85182d98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c752911e40afe6c1ff0f5af85182d98">&#9670;&#160;</a></span>SignedAngleAroundAxisDeg()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +315,41 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float TrackFlowPro.Runtime.Helpers.SignedAngleAroundAxis </td>
+          <td class="memname">float TrackFlowPro.Runtime.Helpers.SignedAngleAroundAxisDeg </td>
+          <td>(</td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>to</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>axis</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00fdaec65899f840c0dbb9b0e1f21037" name="a00fdaec65899f840c0dbb9b0e1f21037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00fdaec65899f840c0dbb9b0e1f21037">&#9670;&#160;</a></span>SignedAngleAroundAxisRad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Runtime.Helpers.SignedAngleAroundAxisRad </td>
           <td>(</td>
           <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>from</em></span>, </td>
         </tr>

@@ -10,7 +10,8 @@ var searchData=
   ['designspeed_7',['designSpeed',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_frames_1_1_spline_defaults.html#a5782709f21501c3ac27233d719acff83',1,'TrackFlowPro::Runtime::Core::Frames::SplineDefaults']]],
   ['deterministic_8',['Deterministic',['../struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_spawn_jitter.html#a2d500e5c8b7a32b34e3ce66173ed37c0',1,'TrackFlowPro::Runtime::Core::Meshing::SpawnJitter']]],
   ['dimension_9',['dimension',['../class_track_flow_pro_1_1_runtime_1_1_custom_spline_options.html#a7501ab18d487ea69d0c798afb5db77f2',1,'TrackFlowPro::Runtime::CustomSplineOptions']]],
-  ['dk_10',['dk',['../class_track_flow_pro_1_1_runtime_1_1_linear_law_params.html#a856fb2fcb75e9235ff5ef42363f090dc',1,'TrackFlowPro::Runtime::LinearLawParams']]],
+  ['dk_10',['dk',['../class_track_flow_pro_1_1_runtime_1_1_linear_law_params.html#a856fb2fcb75e9235ff5ef42363f090dc',1,'TrackFlowPro.Runtime.LinearLawParams.dk'],['../class_track_flow_pro_1_1_runtime_1_1_curve_spec_options.html#a4a2ec5a82e37849793c997923e70a811',1,'TrackFlowPro.Runtime.CurveSpecOptions.dk']]],
   ['dragcoefficient_11',['dragCoefficient',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#ac89ca425fa28b480abc3bdc99af8788b',1,'TrackFlowPro::Runtime::Core::TrackFlowCoaster']]],
-  ['dtau_12',['dtau',['../class_track_flow_pro_1_1_runtime_1_1_linear_law_params.html#aef4664d0cf4e956e74f8ced6971dff23',1,'TrackFlowPro::Runtime::LinearLawParams']]]
+  ['drivenrolldegrees_12',['drivenRollDegrees',['../class_track_flow_pro_1_1_runtime_1_1_track_flow_knot.html#a436f56374ffcdf50883ce86a80c93288',1,'TrackFlowPro::Runtime::TrackFlowKnot']]],
+  ['dtau_13',['dtau',['../class_track_flow_pro_1_1_runtime_1_1_linear_law_params.html#aef4664d0cf4e956e74f8ced6971dff23',1,'TrackFlowPro.Runtime.LinearLawParams.dtau'],['../class_track_flow_pro_1_1_runtime_1_1_curve_spec_options.html#ab81b7a65aef12e79b9cd8b7f41f4184d',1,'TrackFlowPro.Runtime.CurveSpecOptions.dtau']]]
 ];

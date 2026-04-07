@@ -6,6 +6,7 @@ var class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampl
     [ "CurvatureForChordError", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#afe43e6b0e16a36af9a2dffe6c7053724", null ],
     [ "EstimateUniformSampleCount", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a12d17e45c4d1a5222f6b876341db5c83", null ],
     [ "Mat3dToMatrix", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a26b252cb09c8317dd8d2df275ab47c16", null ],
+    [ "PointToSegmentDistance", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a41911529147190e364bc918bd54d3e39", null ],
     [ "QualityToParams", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a7f7e136c7c42e13fc7f2b0ecd4ecc233", null ],
     [ "QualityToUniformSampleCount", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a006e01f0a42aec6b76b177f89b29b8de", null ],
     [ "RebuildPolylineArcLengths", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#adfe7b665943aee47349ec9d125b56267", null ],

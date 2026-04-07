@@ -7,6 +7,7 @@ var searchData=
   ['marksplinedirty_4',['MarkSplineDirty',['../class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor.html#a6129fa80ea3eddbf19a61899ac8eb79b',1,'TrackFlowPro::Editor::TrackFlowSpawnerEditor']]],
   ['mat3dtomatrix_5',['Mat3dToMatrix',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler.html#a26b252cb09c8317dd8d2df275ab47c16',1,'TrackFlowPro::Runtime::Core::Sampling::ChordErrorSampler']]],
   ['mcol_6',['MCol',['../class_track_flow_pro_1_1_runtime_1_1_arc_frame_bridge.html#a6320e392731daa2c4230e8a19f82e373',1,'TrackFlowPro::Runtime::ArcFrameBridge']]],
-  ['mirror_7',['Mirror',['../class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor.html#a600f9e6eeb61641d12ad10bf6f5827c7',1,'TrackFlowPro::Editor::TrackFlowSpawnerEditor']]],
-  ['mirrorbothhandles_8',['MirrorBothHandles',['../class_track_flow_pro_1_1_editor_1_1_track_flow_bezier_handle_editor_util.html#a3cae37d2fdc5405d3e68f615cdcf4933',1,'TrackFlowPro::Editor::TrackFlowBezierHandleEditorUtil']]]
+  ['minimalrotation_7',['MinimalRotation',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html#a5025e01120d7d837946a98e2c58f7e96',1,'TrackFlowPro::Runtime::Core::Curves::TrackFlowSpline']]],
+  ['mirror_8',['Mirror',['../class_track_flow_pro_1_1_editor_1_1_track_flow_spawner_editor.html#a600f9e6eeb61641d12ad10bf6f5827c7',1,'TrackFlowPro::Editor::TrackFlowSpawnerEditor']]],
+  ['mirrorbothhandles_9',['MirrorBothHandles',['../class_track_flow_pro_1_1_editor_1_1_track_flow_bezier_handle_editor_util.html#a3cae37d2fdc5405d3e68f615cdcf4933',1,'TrackFlowPro::Editor::TrackFlowBezierHandleEditorUtil']]]
 ];

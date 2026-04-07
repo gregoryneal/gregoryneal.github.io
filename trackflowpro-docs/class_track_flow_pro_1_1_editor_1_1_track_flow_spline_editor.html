@@ -96,6 +96,11 @@ $(function(){initNavTree('class_track_flow_pro_1_1_editor_1_1_track_flow_spline_
 <p>Custom editor for the <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html" title="This is a wrapper that treats an IArcLengthCurve as a Unity Spline. Here we mimic all of the function...">TrackFlowSpline</a> object, the goal here is for this to work similarly to the spline editor, where you can edit the track properties in the inspector as well as using handles in the scene view.  
  <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:ControlPointAccordionRow" id="r_ControlPointAccordionRow"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor_1_1_control_point_accordion_row.html">ControlPointAccordionRow</a></td></tr>
+<tr class="memitem:KnotListRow" id="r_KnotListRow"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_track_flow_pro_1_1_editor_1_1_track_flow_spline_editor_1_1_knot_list_row.html">KnotListRow</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a42b88e6d86ef59bfb8f038209df531db" id="r_a42b88e6d86ef59bfb8f038209df531db"><td class="memItemLeft">override VisualElement&#160;</td><td class="memItemRight"><a class="el" href="#a42b88e6d86ef59bfb8f038209df531db">CreateInspectorGUI</a> ()</td></tr>
@@ -109,6 +114,10 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a9395d691507ebb0c8d15109d2932cf14" id="r_a9395d691507ebb0c8d15109d2932cf14"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a9395d691507ebb0c8d15109d2932cf14">IsDrivenRollDragFor</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline, int knotIndex)</td></tr>
+<tr class="memitem:a38b3379282627c95fa726d14d66f8a25" id="r_a38b3379282627c95fa726d14d66f8a25"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a38b3379282627c95fa726d14d66f8a25">BeginDrivenRollDrag</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline, int knotIndex, float committedDegrees, Vector3 tangentWS, Vector3 normalWS, Vector3 binormalWS)</td></tr>
+<tr class="memitem:a4b4eff477de89deedf26119dba0e1120" id="r_a4b4eff477de89deedf26119dba0e1120"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4b4eff477de89deedf26119dba0e1120">CancelDrivenRollDrag</a> ()</td></tr>
+<tr class="memitem:a102d98e8752bb0882bb91fc1ec56c5de" id="r_a102d98e8752bb0882bb91fc1ec56c5de"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a102d98e8752bb0882bb91fc1ec56c5de">CommitDrivenRollDrag</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline)</td></tr>
 <tr class="memitem:a527014d3141b6c59b96b360fdf5651cd" id="r_a527014d3141b6c59b96b360fdf5651cd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a527014d3141b6c59b96b360fdf5651cd">OnEnable</a> ()</td></tr>
 <tr class="memitem:a5028bc61201c7024ca48cc57fd2a9750" id="r_a5028bc61201c7024ca48cc57fd2a9750"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5028bc61201c7024ca48cc57fd2a9750">OnDisable</a> ()</td></tr>
 <tr class="memitem:afe0751a88a2664edf2c2b9cf614fe73e" id="r_afe0751a88a2664edf2c2b9cf614fe73e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afe0751a88a2664edf2c2b9cf614fe73e">OnSceneGUI</a> ()</td></tr>
@@ -119,17 +128,125 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a3da51df1b3cba839166e87cf1f6507b8" id="r_a3da51df1b3cba839166e87cf1f6507b8"><td class="memItemLeft">static GUIStyle&#160;</td><td class="memItemRight"><a class="el" href="#a3da51df1b3cba839166e87cf1f6507b8">GetKnotLabelStyle</a> (<a class="el" href="class_track_flow_pro_1_1_editor_1_1_track_flow_editor_preferences.html">TrackFlowEditorPreferences</a> prefs)</td></tr>
+<tr class="memitem:acedea912781f8e4f9f8a563d889cec49" id="r_acedea912781f8e4f9f8a563d889cec49"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#acedea912781f8e4f9f8a563d889cec49">ApplyRotationSnap</a> (float rawAngleDeg, float snapRotDeg, bool incrementalSnap, bool gridSnap)</td></tr>
+<tr class="memitem:a0354df89533f0abf5b154f5286949a52" id="r_a0354df89533f0abf5b154f5286949a52"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0354df89533f0abf5b154f5286949a52">CollapseAllControlPointProperties</a> (SerializedProperty cpsProp)</td></tr>
 <tr class="memitem:ae4cf64e2ba84f26bf078b348bde7f940" id="r_ae4cf64e2ba84f26bf078b348bde7f940"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ae4cf64e2ba84f26bf078b348bde7f940">ClampAnimationCurve</a> (AnimationCurve curve)</td></tr>
 <tr class="memdesc:ae4cf64e2ba84f26bf078b348bde7f940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp keys and values to be within [0, 1].  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a17db06b0c77c23a2d0aa341b20138327" id="r_a17db06b0c77c23a2d0aa341b20138327"><td class="memItemLeft">readonly List&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a17db06b0c77c23a2d0aa341b20138327">_controlPointIndexSource</a> = new()</td></tr>
 <tr class="memitem:ad4e7788aeeeb0eb4fb04523212e08999" id="r_ad4e7788aeeeb0eb4fb04523212e08999"><td class="memItemLeft">HashSet&lt; int &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ad4e7788aeeeb0eb4fb04523212e08999">_selectedKnotIndices</a> = new()</td></tr>
+<tr class="memitem:acb54b3be239b537022bf47df2c015087" id="r_acb54b3be239b537022bf47df2c015087"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#acb54b3be239b537022bf47df2c015087">_drivenRollDragActive</a></td></tr>
+<tr class="memitem:a16d6cce9c032cf135dcb2f3993abab08" id="r_a16d6cce9c032cf135dcb2f3993abab08"><td class="memItemLeft"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a>&#160;</td><td class="memItemRight"><a class="el" href="#a16d6cce9c032cf135dcb2f3993abab08">_drivenRollSpline</a></td></tr>
+<tr class="memitem:a08b969dd3eb20206f80441ff45760661" id="r_a08b969dd3eb20206f80441ff45760661"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a08b969dd3eb20206f80441ff45760661">_drivenRollKnot</a> = -1</td></tr>
+<tr class="memitem:a82e30c7a88cad338c45100b9c2f5e2bf" id="r_a82e30c7a88cad338c45100b9c2f5e2bf"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a82e30c7a88cad338c45100b9c2f5e2bf">_drivenRollStartT</a></td></tr>
+<tr class="memitem:aca75c08451662848689bdb6b81f546f9" id="r_aca75c08451662848689bdb6b81f546f9"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#aca75c08451662848689bdb6b81f546f9">_drivenRollStartN</a></td></tr>
+<tr class="memitem:acb9d480cb87d68cccf48e34aa3d9a298" id="r_acb9d480cb87d68cccf48e34aa3d9a298"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#acb9d480cb87d68cccf48e34aa3d9a298">_drivenRollStartB</a></td></tr>
+<tr class="memitem:a7eb175baefe1686031e1e61baa61bdb2" id="r_a7eb175baefe1686031e1e61baa61bdb2"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7eb175baefe1686031e1e61baa61bdb2">_drivenRollStartDegrees</a></td></tr>
+<tr class="memitem:ad21dbafb94c7784080eac51a6c4bb20e" id="r_ad21dbafb94c7784080eac51a6c4bb20e"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ad21dbafb94c7784080eac51a6c4bb20e">_drivenRollPreviewDegrees</a></td></tr>
+<tr class="memitem:ab32afe1f220bfa113db34606f75da7a2" id="r_ab32afe1f220bfa113db34606f75da7a2"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ab32afe1f220bfa113db34606f75da7a2">_drivenRollChanged</a></td></tr>
+<tr class="memitem:a6568524dff608836463a30cf916003bb" id="r_a6568524dff608836463a30cf916003bb"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a6568524dff608836463a30cf916003bb">_drivenRollAccumulatedDeltaDegrees</a></td></tr>
+<tr class="memitem:a64764ca487e3474b285f271f5c7f81f8" id="r_a64764ca487e3474b285f271f5c7f81f8"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a64764ca487e3474b285f271f5c7f81f8">_drivenRollLastB</a></td></tr>
 <tr class="memitem:ac91f989865db1642a92e7f34e0abeb8b" id="r_ac91f989865db1642a92e7f34e0abeb8b"><td class="memItemLeft">Tool&#160;</td><td class="memItemRight"><a class="el" href="#ac91f989865db1642a92e7f34e0abeb8b">lastTool</a> = Tool.None</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a67ad64e84aa19ff121654c513eecccbe" id="r_a67ad64e84aa19ff121654c513eecccbe"><td class="memItemLeft">static GUIStyle&#160;</td><td class="memItemRight"><a class="el" href="#a67ad64e84aa19ff121654c513eecccbe">s_KnotLabelStyle</a></td></tr>
+<tr class="memitem:a06c4920f30f99fde690f498ca172f89a" id="r_a06c4920f30f99fde690f498ca172f89a"><td class="memItemLeft">static Color&#160;</td><td class="memItemRight"><a class="el" href="#a06c4920f30f99fde690f498ca172f89a">s_LastKnotLabelColor</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Custom editor for the <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html" title="This is a wrapper that treats an IArcLengthCurve as a Unity Spline. Here we mimic all of the function...">TrackFlowSpline</a> object, the goal here is for this to work similarly to the spline editor, where you can edit the track properties in the inspector as well as using handles in the scene view. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="acedea912781f8e4f9f8a563d889cec49" name="acedea912781f8e4f9f8a563d889cec49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedea912781f8e4f9f8a563d889cec49">&#9670;&#160;</a></span>ApplyRotationSnap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Editor.TrackFlowSplineEditor.ApplyRotationSnap </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>rawAngleDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>snapRotDeg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>incrementalSnap</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>gridSnap</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38b3379282627c95fa726d14d66f8a25" name="a38b3379282627c95fa726d14d66f8a25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38b3379282627c95fa726d14d66f8a25">&#9670;&#160;</a></span>BeginDrivenRollDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Editor.TrackFlowSplineEditor.BeginDrivenRollDrag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a></td>          <td class="paramname"><span class="paramname"><em>spline</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>knotIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>committedDegrees</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>tangentWS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>normalWS</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>binormalWS</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab0a8585833cac8b4d4fe21d572722789" name="ab0a8585833cac8b4d4fe21d572722789"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0a8585833cac8b4d4fe21d572722789">&#9670;&#160;</a></span>BuildTrackModifierOptionMenu()</h2>
 
@@ -165,6 +282,31 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4b4eff477de89deedf26119dba0e1120" name="a4b4eff477de89deedf26119dba0e1120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4eff477de89deedf26119dba0e1120">&#9670;&#160;</a></span>CancelDrivenRollDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Editor.TrackFlowSplineEditor.CancelDrivenRollDrag </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae4cf64e2ba84f26bf078b348bde7f940" name="ae4cf64e2ba84f26bf078b348bde7f940"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4cf64e2ba84f26bf078b348bde7f940">&#9670;&#160;</a></span>ClampAnimationCurve()</h2>
 
@@ -195,6 +337,56 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a0354df89533f0abf5b154f5286949a52" name="a0354df89533f0abf5b154f5286949a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0354df89533f0abf5b154f5286949a52">&#9670;&#160;</a></span>CollapseAllControlPointProperties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Editor.TrackFlowSplineEditor.CollapseAllControlPointProperties </td>
+          <td>(</td>
+          <td class="paramtype">SerializedProperty</td>          <td class="paramname"><span class="paramname"><em>cpsProp</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a102d98e8752bb0882bb91fc1ec56c5de" name="a102d98e8752bb0882bb91fc1ec56c5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102d98e8752bb0882bb91fc1ec56c5de">&#9670;&#160;</a></span>CommitDrivenRollDrag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Editor.TrackFlowSplineEditor.CommitDrivenRollDrag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a></td>          <td class="paramname"><span class="paramname"><em>spline</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -359,6 +551,60 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3da51df1b3cba839166e87cf1f6507b8" name="a3da51df1b3cba839166e87cf1f6507b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3da51df1b3cba839166e87cf1f6507b8">&#9670;&#160;</a></span>GetKnotLabelStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUIStyle TrackFlowPro.Editor.TrackFlowSplineEditor.GetKnotLabelStyle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_editor_1_1_track_flow_editor_preferences.html">TrackFlowEditorPreferences</a></td>          <td class="paramname"><span class="paramname"><em>prefs</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9395d691507ebb0c8d15109d2932cf14" name="a9395d691507ebb0c8d15109d2932cf14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9395d691507ebb0c8d15109d2932cf14">&#9670;&#160;</a></span>IsDrivenRollDragFor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Editor.TrackFlowSplineEditor.IsDrivenRollDragFor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a></td>          <td class="paramname"><span class="paramname"><em>spline</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>knotIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5028bc61201c7024ca48cc57fd2a9750" name="a5028bc61201c7024ca48cc57fd2a9750"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5028bc61201c7024ca48cc57fd2a9750">&#9670;&#160;</a></span>OnDisable()</h2>
 
@@ -464,6 +710,270 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a17db06b0c77c23a2d0aa341b20138327" name="a17db06b0c77c23a2d0aa341b20138327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17db06b0c77c23a2d0aa341b20138327">&#9670;&#160;</a></span>_controlPointIndexSource</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly List&lt;int&gt; TrackFlowPro.Editor.TrackFlowSplineEditor._controlPointIndexSource = new()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6568524dff608836463a30cf916003bb" name="a6568524dff608836463a30cf916003bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6568524dff608836463a30cf916003bb">&#9670;&#160;</a></span>_drivenRollAccumulatedDeltaDegrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollAccumulatedDeltaDegrees</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab32afe1f220bfa113db34606f75da7a2" name="ab32afe1f220bfa113db34606f75da7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab32afe1f220bfa113db34606f75da7a2">&#9670;&#160;</a></span>_drivenRollChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollChanged</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb54b3be239b537022bf47df2c015087" name="acb54b3be239b537022bf47df2c015087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb54b3be239b537022bf47df2c015087">&#9670;&#160;</a></span>_drivenRollDragActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollDragActive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08b969dd3eb20206f80441ff45760661" name="a08b969dd3eb20206f80441ff45760661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08b969dd3eb20206f80441ff45760661">&#9670;&#160;</a></span>_drivenRollKnot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollKnot = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a64764ca487e3474b285f271f5c7f81f8" name="a64764ca487e3474b285f271f5c7f81f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64764ca487e3474b285f271f5c7f81f8">&#9670;&#160;</a></span>_drivenRollLastB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollLastB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad21dbafb94c7784080eac51a6c4bb20e" name="ad21dbafb94c7784080eac51a6c4bb20e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21dbafb94c7784080eac51a6c4bb20e">&#9670;&#160;</a></span>_drivenRollPreviewDegrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollPreviewDegrees</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16d6cce9c032cf135dcb2f3993abab08" name="a16d6cce9c032cf135dcb2f3993abab08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d6cce9c032cf135dcb2f3993abab08">&#9670;&#160;</a></span>_drivenRollSpline</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollSpline</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb9d480cb87d68cccf48e34aa3d9a298" name="acb9d480cb87d68cccf48e34aa3d9a298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb9d480cb87d68cccf48e34aa3d9a298">&#9670;&#160;</a></span>_drivenRollStartB</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollStartB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7eb175baefe1686031e1e61baa61bdb2" name="a7eb175baefe1686031e1e61baa61bdb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb175baefe1686031e1e61baa61bdb2">&#9670;&#160;</a></span>_drivenRollStartDegrees</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollStartDegrees</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca75c08451662848689bdb6b81f546f9" name="aca75c08451662848689bdb6b81f546f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca75c08451662848689bdb6b81f546f9">&#9670;&#160;</a></span>_drivenRollStartN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollStartN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82e30c7a88cad338c45100b9c2f5e2bf" name="a82e30c7a88cad338c45100b9c2f5e2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e30c7a88cad338c45100b9c2f5e2bf">&#9670;&#160;</a></span>_drivenRollStartT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector3 TrackFlowPro.Editor.TrackFlowSplineEditor._drivenRollStartT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad4e7788aeeeb0eb4fb04523212e08999" name="ad4e7788aeeeb0eb4fb04523212e08999"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4e7788aeeeb0eb4fb04523212e08999">&#9670;&#160;</a></span>_selectedKnotIndices</h2>
 
@@ -502,6 +1012,50 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67ad64e84aa19ff121654c513eecccbe" name="a67ad64e84aa19ff121654c513eecccbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ad64e84aa19ff121654c513eecccbe">&#9670;&#160;</a></span>s_KnotLabelStyle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GUIStyle TrackFlowPro.Editor.TrackFlowSplineEditor.s_KnotLabelStyle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06c4920f30f99fde690f498ca172f89a" name="a06c4920f30f99fde690f498ca172f89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06c4920f30f99fde690f498ca172f89a">&#9670;&#160;</a></span>s_LastKnotLabelColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color TrackFlowPro.Editor.TrackFlowSplineEditor.s_LastKnotLabelColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

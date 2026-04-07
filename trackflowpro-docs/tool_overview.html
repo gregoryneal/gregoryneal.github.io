@@ -93,13 +93,13 @@ $(function(){initNavTree('tool_overview.html','',''); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>TrackFlow Pro comes with a few built in tools to help you author curves similar to the built in spline system. In this section we will go over the two tools in the Toolbar, as well as a helper tool located in the Tools dropdown.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md19"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md27"></a>
 TrackFlow Place Knots Tool</h3>
 <div class="image">
 <img src="trackflowtoolbarbutton.png" alt="" width="50%"/>
 </div>
 <p>This tool is located in the Editor Toolbar, near the end of the transform tools. When activated you can click inside the scene and draw control points. If you do not have a <span class="tt">TrackFlowSpline</span> object selected at the time of drawing, one will be created for you, otherwise the knots will be appended to the existing spline.</p>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md20"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md28"></a>
 TrackFlow HoverProbe Tool</h3>
 <p>This tool is located next to the Place Knots Tool.</p>
 <div class="image">
@@ -114,7 +114,7 @@ TrackFlow HoverProbe Tool</h3>
 <img src="enableforcespreview.png" alt="" width="50%"/>
 </div>
 <p>Now curvature data will be displayed along the curve, as well as force data depending on the <span class="tt">Display Mode</span> setting as well as the settings located within <span class="tt">Force Computation Settings</span>.</p>
-<h4 class="doxsection"><a class="anchor" id="autotoc_md21"></a>
+<h4 class="doxsection"><a class="anchor" id="autotoc_md29"></a>
 Values Provided</h4>
 <p><em>idx</em>: Sample Index</p>
 <p><em>s</em>: Arc Length in meters</p>
@@ -133,7 +133,7 @@ Values Provided</h4>
 <div class="image">
 <img src="hoverprobetool.png" alt="" width="50%"/>
 </div>
-<h3 class="doxsection"><a class="anchor" id="autotoc_md22"></a>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
 TrackFlow Sync Bezier Handles to Tangent</h3>
 <p>When designing curves you might not know what type of curve you want to use right then and there. In spline mode the curve uses the bezier handles to determine the input and output tangent of the curve, and in segment mode it uses the actual frame tangent (blue arrow on the knot). To automatically sync the bezier handles to match the frame tangent, you can use the Sync tool located within <span class="tt">Tools &gt; TrackFlow &gt; Sync Bezier Handles to Tangent on Frame Edit</span>. Simply select it and any knots after that point will have the bezier handles synced to the frame tangent when you edit them.</p>
 <div class="image">

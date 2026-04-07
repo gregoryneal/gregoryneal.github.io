@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['mesh_0',['Exporting the mesh',['../index.html#autotoc_md12',1,'']]],
-  ['mesh_20mode_1',['Mesh Mode',['../spawner_overview.html#autotoc_md16',1,'']]],
-  ['mode_2',['Mode',['../spawner_overview.html#autotoc_md16',1,'Mesh Mode'],['../spawner_overview.html#autotoc_md15',1,'Object Mode'],['../more_info.html#autotoc_md4',1,'Segment Mode'],['../more_info.html#autotoc_md6',1,'Spline Mode']]]
+  ['i_20view_20them_0',['&lt;b&gt;Where can I view them?&lt;/b&gt;',['../more_info.html#autotoc_md10',1,'']]],
+  ['if_20the_20curve_20looks_20bad_1',['&lt;b&gt;What if the curve looks bad?&lt;/b&gt;',['../more_info.html#autotoc_md13',1,'']]],
+  ['important_2',['&lt;b&gt;Why are they important?&lt;/b&gt;',['../more_info.html#autotoc_md11',1,'']]],
+  ['info_3',['&lt;b&gt;Nerd Info&lt;/b&gt;',['../more_info.html#autotoc_md15',1,'']]],
+  ['information_4',['Detailed Information',['../more_info.html',1,'']]],
+  ['installation_5',['Installation',['../index.html#autotoc_md17',1,'']]],
+  ['is_20trackflow_20pro_6',['What is TrackFlow Pro?',['../more_info.html#autotoc_md8',1,'']]],
+  ['it_7',['That&apos;s it',['../index.html#autotoc_md21',1,'']]]
 ];

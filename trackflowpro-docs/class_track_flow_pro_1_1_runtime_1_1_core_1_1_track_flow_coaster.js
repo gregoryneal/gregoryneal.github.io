@@ -7,6 +7,7 @@ var class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster =
     [ "CalculateCartOffsets", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a0f401280ab2519d10330ea42abbd2766", null ],
     [ "CalculateCartsBounds", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#ab80ecca13c27513589c7696aad32d5fe", null ],
     [ "FixedUpdate", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a95556225db31840499d100b88057ce2a", null ],
+    [ "SetCartPose", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a99f0bf4671a5dc2ceff8982e36d86222", null ],
     [ "Start", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a5b9def34ad5dac32ad5991c2a3a9cc8b", null ],
     [ "UpdateCartTransform", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#af5caaae82c0ea6631153c5d9218e06ce", null ],
     [ "_cartBounds", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a29fef7223358e9cfcac65843b6a4ce75", null ],
@@ -27,6 +28,7 @@ var class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster =
     [ "rollingFriction", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a5f6e22ddf3231c47a9fea5d1b3c57db3", null ],
     [ "Spline", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a919e4d84c816f5a7f22e406d428b92b7", null ],
     [ "startSpeed", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a78b5067cc5ca3dd2bd55f7d55934c033", null ],
+    [ "stopSpeedEpsilon", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a09173cd0bcaf77cb30e0c11eaf66e27d", null ],
     [ "BankAngle", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#a613944eb73a1cdaab55e211eb1047f1e", null ],
     [ "Speed", "class_track_flow_pro_1_1_runtime_1_1_core_1_1_track_flow_coaster.html#ac6ff548ecba60e605a5ecc08b55423fa", null ]
 ];

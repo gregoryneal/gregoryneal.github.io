@@ -111,6 +111,10 @@ Public Member Functions</h2></td></tr>
 Properties</h2></td></tr>
 <tr class="memitem:a7db4af481cf69aaa1a36e1eda97e7b21" id="r_a7db4af481cf69aaa1a36e1eda97e7b21"><td class="memItemLeft">override GUIContent&#160;</td><td class="memItemRight"><a class="el" href="#a7db4af481cf69aaa1a36e1eda97e7b21">toolbarIcon</a><code> [get]</code></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a896ea54b74849b1d874221c18f1779ba" id="r_a896ea54b74849b1d874221c18f1779ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a896ea54b74849b1d874221c18f1779ba">LoadIcon</a> ()</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a0c89bb592afa31ea0e35f1a8b8978ae8" id="r_a0c89bb592afa31ea0e35f1a8b8978ae8"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0c89bb592afa31ea0e35f1a8b8978ae8">QueueUnitySelection</a> (GameObject go)</td></tr>
@@ -118,6 +122,7 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a48e0da827906d67ce39a41d9674bee52" id="r_a48e0da827906d67ce39a41d9674bee52"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a48e0da827906d67ce39a41d9674bee52">MarkCacheDirty</a> ()</td></tr>
 <tr class="memitem:aa556e8e485786f5659b8a95cab9c766e" id="r_aa556e8e485786f5659b8a95cab9c766e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#aa556e8e485786f5659b8a95cab9c766e">InvalidateHoverCache</a> ()</td></tr>
 <tr class="memitem:a55d16bf5b07ae1d403b1bf12864f12c4" id="r_a55d16bf5b07ae1d403b1bf12864f12c4"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a55d16bf5b07ae1d403b1bf12864f12c4">SelectExistingKnot</a> (SnapResult snap, bool ctrlToggle)</td></tr>
+<tr class="memitem:a8c5fa4165962b5d1cf7e4fddd8fd6bf1" id="r_a8c5fa4165962b5d1cf7e4fddd8fd6bf1"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a8c5fa4165962b5d1cf7e4fddd8fd6bf1">GetSplitSegmentStartKnotIndex</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline, int insertIndex)</td></tr>
 <tr class="memitem:ae27973ca9819ff9b244636698461562c" id="r_ae27973ca9819ff9b244636698461562c"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ae27973ca9819ff9b244636698461562c">PlaceNewKnot</a> (SceneView sv, Event evt, SnapResult snap)</td></tr>
 <tr class="memitem:acf5f625437d9e6bab73a7413fded76e5" id="r_acf5f625437d9e6bab73a7413fded76e5"><td class="memItemLeft">static <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a>&#160;</td><td class="memItemRight"><a class="el" href="#acf5f625437d9e6bab73a7413fded76e5">CreateNewSplineAt</a> (Vector3 worldPos)</td></tr>
 <tr class="memitem:a70ecda3166a4b1e08c7cd2dad5c48223" id="r_a70ecda3166a4b1e08c7cd2dad5c48223"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a70ecda3166a4b1e08c7cd2dad5c48223">ComputeInsertIndexFromSample</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline, int sampleIndex)</td></tr>
@@ -125,6 +130,8 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:ab4b333f6ba29bfabfc17d6f7245b319f" id="r_ab4b333f6ba29bfabfc17d6f7245b319f"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#ab4b333f6ba29bfabfc17d6f7245b319f">GuessTangentWorld</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline, int insertIndex, Vector3 newWorldPos)</td></tr>
 <tr class="memitem:a8feb995d9fae87da48be2f8fdd6071bc" id="r_a8feb995d9fae87da48be2f8fdd6071bc"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a8feb995d9fae87da48be2f8fdd6071bc">TryInsertBezierKnotPreserveShape</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a> spline, int insertIndex, Vector3 desiredWorld, Vector3 binormalHintWorld, out int insertedIndex, out Vector3 insertedWorldPos, out float handleLenWorld)</td></tr>
 <tr class="memitem:a1d4820e0adfb0108ca03707741389eb2" id="r_a1d4820e0adfb0108ca03707741389eb2"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a1d4820e0adfb0108ca03707741389eb2">ClosestParamOnCubicBezier</a> (in Vector3 P0, in Vector3 P1, in Vector3 P2, in Vector3 P3, in Vector3 Q)</td></tr>
+<tr class="memitem:a2029ab7e3c40822ebf16977d48ecc23f" id="r_a2029ab7e3c40822ebf16977d48ecc23f"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a2029ab7e3c40822ebf16977d48ecc23f">IsMouseInsideSceneView</a> (SceneView sv, Vector2 mousePos)</td></tr>
+<tr class="memitem:afb6c9df7da087a9ce1fc740244103e92" id="r_afb6c9df7da087a9ce1fc740244103e92"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#afb6c9df7da087a9ce1fc740244103e92">IsFinite</a> (Vector3 v)</td></tr>
 <tr class="memitem:a0d06a5d17ccff87ad4ce1b3f91833bf5" id="r_a0d06a5d17ccff87ad4ce1b3f91833bf5"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a0d06a5d17ccff87ad4ce1b3f91833bf5">CubicBezier</a> (in Vector3 P0, in Vector3 P1, in Vector3 P2, in Vector3 P3, float t)</td></tr>
 <tr class="memitem:a91553c7cbb5cd5447951e8117d45d0b1" id="r_a91553c7cbb5cd5447951e8117d45d0b1"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a91553c7cbb5cd5447951e8117d45d0b1">CubicBezierDeriv</a> (in Vector3 P0, in Vector3 P1, in Vector3 P2, in Vector3 P3, float t)</td></tr>
 <tr class="memitem:ad6d57f6f1df1c96e1fa0e0d4af9797af" id="r_ad6d57f6f1df1c96e1fa0e0d4af9797af"><td class="memItemLeft">static Vector3&#160;</td><td class="memItemRight"><a class="el" href="#ad6d57f6f1df1c96e1fa0e0d4af9797af">CubicBezierSecondDeriv</a> (in Vector3 P0, in Vector3 P1, in Vector3 P2, in Vector3 P3, float t)</td></tr>
@@ -143,6 +150,7 @@ Static Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac1d33ad858917ec8386efc5e0eab1dc5" id="r_ac1d33ad858917ec8386efc5e0eab1dc5"><td class="memItemLeft">GUIContent&#160;</td><td class="memItemRight"><a class="el" href="#ac1d33ad858917ec8386efc5e0eab1dc5">_icon</a></td></tr>
+<tr class="memitem:a41cec5e4aaa0c7a49bbcff30dfaf2164" id="r_a41cec5e4aaa0c7a49bbcff30dfaf2164"><td class="memItemLeft">Texture2D&#160;</td><td class="memItemRight"><a class="el" href="#a41cec5e4aaa0c7a49bbcff30dfaf2164">icon</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -161,9 +169,6 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:aed827177bfc7ef6227c60ff376204ba9" id="r_aed827177bfc7ef6227c60ff376204ba9"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#aed827177bfc7ef6227c60ff376204ba9">s_CacheDirty</a> = true</td></tr>
 <tr class="memitem:ac99055818e8073c6a49eedb427412777" id="r_ac99055818e8073c6a49eedb427412777"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_editor_1_1_track_flow_place_knot_tool_1_1_drag_state.html">DragState</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac99055818e8073c6a49eedb427412777">s_Drag</a></td></tr>
 <tr class="memitem:a8d6be03b04576217de98339051d5403d" id="r_a8d6be03b04576217de98339051d5403d"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_editor_1_1_track_flow_place_knot_tool_1_1_hover_cache.html">HoverCache</a>&#160;</td><td class="memItemRight"><a class="el" href="#a8d6be03b04576217de98339051d5403d">s_Hover</a></td></tr>
-<tr class="memitem:a9cb8ea0b651d3989154b9ba4796e9478" id="r_a9cb8ea0b651d3989154b9ba4796e9478"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#a9cb8ea0b651d3989154b9ba4796e9478">k_MinSegmentRefineWindow</a> = 8</td></tr>
-<tr class="memitem:aa5defb779a848b64e3ab4ced908c374b" id="r_aa5defb779a848b64e3ab4ced908c374b"><td class="memItemLeft">const int&#160;</td><td class="memItemRight"><a class="el" href="#aa5defb779a848b64e3ab4ced908c374b">k_MaxSegmentRefineWindow</a> = 96</td></tr>
-<tr class="memitem:a33cbf622563916fff0cc85196b219095" id="r_a33cbf622563916fff0cc85196b219095"><td class="memItemLeft">const float&#160;</td><td class="memItemRight"><a class="el" href="#a33cbf622563916fff0cc85196b219095">k_DegenerateSegmentSq</a> = 1e-10f</td></tr>
 <tr class="memitem:a5fe492c472ae6e7709c9d853e8d92abf" id="r_a5fe492c472ae6e7709c9d853e8d92abf"><td class="memItemLeft">static GameObject&#160;</td><td class="memItemRight"><a class="el" href="#a5fe492c472ae6e7709c9d853e8d92abf">s_PendingUnitySelectionGO</a></td></tr>
 <tr class="memitem:acf7a04e54ad14553281e4516bb1c8bc0" id="r_acf7a04e54ad14553281e4516bb1c8bc0"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#acf7a04e54ad14553281e4516bb1c8bc0">s_ReassertToolAfterSelection</a></td></tr>
 </table>
@@ -572,6 +577,35 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a8c5fa4165962b5d1cf7e4fddd8fd6bf1" name="a8c5fa4165962b5d1cf7e4fddd8fd6bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5fa4165962b5d1cf7e4fddd8fd6bf1">&#9670;&#160;</a></span>GetSplitSegmentStartKnotIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrackFlowPro.Editor.TrackFlowPlaceKnotTool.GetSplitSegmentStartKnotIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a></td>          <td class="paramname"><span class="paramname"><em>spline</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>insertIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab4b333f6ba29bfabfc17d6f7245b319f" name="ab4b333f6ba29bfabfc17d6f7245b319f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab4b333f6ba29bfabfc17d6f7245b319f">&#9670;&#160;</a></span>GuessTangentWorld()</h2>
 
@@ -659,6 +693,85 @@ Static Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb6c9df7da087a9ce1fc740244103e92" name="afb6c9df7da087a9ce1fc740244103e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6c9df7da087a9ce1fc740244103e92">&#9670;&#160;</a></span>IsFinite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Editor.TrackFlowPlaceKnotTool.IsFinite </td>
+          <td>(</td>
+          <td class="paramtype">Vector3</td>          <td class="paramname"><span class="paramname"><em>v</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2029ab7e3c40822ebf16977d48ecc23f" name="a2029ab7e3c40822ebf16977d48ecc23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2029ab7e3c40822ebf16977d48ecc23f">&#9670;&#160;</a></span>IsMouseInsideSceneView()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Editor.TrackFlowPlaceKnotTool.IsMouseInsideSceneView </td>
+          <td>(</td>
+          <td class="paramtype">SceneView</td>          <td class="paramname"><span class="paramname"><em>sv</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Vector2</td>          <td class="paramname"><span class="paramname"><em>mousePos</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a896ea54b74849b1d874221c18f1779ba" name="a896ea54b74849b1d874221c18f1779ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896ea54b74849b1d874221c18f1779ba">&#9670;&#160;</a></span>LoadIcon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Editor.TrackFlowPlaceKnotTool.LoadIcon </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1110,8 +1223,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a33cbf622563916fff0cc85196b219095" name="a33cbf622563916fff0cc85196b219095"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33cbf622563916fff0cc85196b219095">&#9670;&#160;</a></span>k_DegenerateSegmentSq</h2>
+<a id="a41cec5e4aaa0c7a49bbcff30dfaf2164" name="a41cec5e4aaa0c7a49bbcff30dfaf2164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41cec5e4aaa0c7a49bbcff30dfaf2164">&#9670;&#160;</a></span>icon</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1120,56 +1233,12 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const float TrackFlowPro.Editor.TrackFlowPlaceKnotTool.k_DegenerateSegmentSq = 1e-10f</td>
+          <td class="memname">Texture2D TrackFlowPro.Editor.TrackFlowPlaceKnotTool.icon</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa5defb779a848b64e3ab4ced908c374b" name="aa5defb779a848b64e3ab4ced908c374b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5defb779a848b64e3ab4ced908c374b">&#9670;&#160;</a></span>k_MaxSegmentRefineWindow</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int TrackFlowPro.Editor.TrackFlowPlaceKnotTool.k_MaxSegmentRefineWindow = 96</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9cb8ea0b651d3989154b9ba4796e9478" name="a9cb8ea0b651d3989154b9ba4796e9478"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cb8ea0b651d3989154b9ba4796e9478">&#9670;&#160;</a></span>k_MinSegmentRefineWindow</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int TrackFlowPro.Editor.TrackFlowPlaceKnotTool.k_MinSegmentRefineWindow = 8</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

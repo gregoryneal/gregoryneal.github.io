@@ -103,7 +103,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab63889e24c31df9793a135149a90d469" id="r_ab63889e24c31df9793a135149a90d469"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab63889e24c31df9793a135149a90d469">CleanupOrphanChildrenEditor</a> ()</td></tr>
 <tr class="memitem:aefb4b3748003cd983e6e44fe38d28ff9" id="r_aefb4b3748003cd983e6e44fe38d28ff9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aefb4b3748003cd983e6e44fe38d28ff9">NuclearDestruction</a> ()</td></tr>
 <tr class="memdesc:aefb4b3748003cd983e6e44fe38d28ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the pool, clears the active object array increments nuclearRegret counter.  <br /></td></tr>
 <tr class="memitem:a5666e20d6183bcbc3f3acfb983e561bf" id="r_a5666e20d6183bcbc3f3acfb983e561bf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5666e20d6183bcbc3f3acfb983e561bf">RecalculateBounds</a> ()</td></tr>
@@ -194,15 +193,22 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a11ab9377faefc422ff0addf7c02eca55" id="r_a11ab9377faefc422ff0addf7c02eca55"><td class="memItemLeft">Transform&#160;</td><td class="memItemRight"><a class="el" href="#a11ab9377faefc422ff0addf7c02eca55">GetOrCreateRoot</a> (ref Transform cache, string name, HideFlags editorFlags)</td></tr>
 <tr class="memitem:afd3d43175b9b5dc1e5a7e5c7e2ecc22a" id="r_afd3d43175b9b5dc1e5a7e5c7e2ecc22a"><td class="memItemLeft">Transform&#160;</td><td class="memItemRight"><a class="el" href="#afd3d43175b9b5dc1e5a7e5c7e2ecc22a">GetOrCreateInstancesRoot</a> ()</td></tr>
 <tr class="memitem:a256a972e168f70dac0f90d8513059e60" id="r_a256a972e168f70dac0f90d8513059e60"><td class="memItemLeft">Transform&#160;</td><td class="memItemRight"><a class="el" href="#a256a972e168f70dac0f90d8513059e60">GetOrCreatePoolRoot</a> ()</td></tr>
+<tr class="memitem:a299a58d63492db865c39b6afb399b42f" id="r_a299a58d63492db865c39b6afb399b42f"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a299a58d63492db865c39b6afb399b42f">CanMutateGeneratedHierarchy</a> ()</td></tr>
+<tr class="memdesc:a299a58d63492db865c39b6afb399b42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the spawner should be able to change the scene hierarchy. Don't allow if it is a prefab or otherwise not a real object loaded into an active scene.  <br /></td></tr>
 <tr class="memitem:a640337d3587e1daa5dba3725d5c7c02b" id="r_a640337d3587e1daa5dba3725d5c7c02b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a640337d3587e1daa5dba3725d5c7c02b">ResetTransientState</a> ()</td></tr>
 <tr class="memdesc:a640337d3587e1daa5dba3725d5c7c02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Completely reset the references, useful if we saved a spawner as a prefab with references attached.  <br /></td></tr>
 <tr class="memitem:a10e8333fa768a8e295e610d23b51b8ba" id="r_a10e8333fa768a8e295e610d23b51b8ba"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a10e8333fa768a8e295e610d23b51b8ba">OnEnable</a> ()</td></tr>
 <tr class="memitem:a66623d6c44eaafbba41c800a4fe5a133" id="r_a66623d6c44eaafbba41c800a4fe5a133"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a66623d6c44eaafbba41c800a4fe5a133">OnDisable</a> ()</td></tr>
-<tr class="memitem:a41b44e8418fc120025e285cdb16649ea" id="r_a41b44e8418fc120025e285cdb16649ea"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a41b44e8418fc120025e285cdb16649ea">QueueEditorRebuild</a> (bool nuclear=false)</td></tr>
-<tr class="memdesc:a41b44e8418fc120025e285cdb16649ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a delay call to rebuild the spline when the editor finishes updating the inspectors. It's okay to stack many of these in a single frame the extras will be ignored.  <br /></td></tr>
+<tr class="memitem:abb2119216745c03c26cbf000d024f192" id="r_abb2119216745c03c26cbf000d024f192"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abb2119216745c03c26cbf000d024f192">CleanupOrphanChildrenEditorNow</a> ()</td></tr>
+<tr class="memitem:a6bce194c5aee36cfb88989f34ab922c1" id="r_a6bce194c5aee36cfb88989f34ab922c1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6bce194c5aee36cfb88989f34ab922c1">QueueEditorMaintenance</a> (bool cleanupOrphans=false, bool nuclear=false, bool rebuild=false, bool refreshPool=false)</td></tr>
+<tr class="memitem:ac2840ea1fc2aa524b3b5aadad7c1b6b3" id="r_ac2840ea1fc2aa524b3b5aadad7c1b6b3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac2840ea1fc2aa524b3b5aadad7c1b6b3">CancelEditorMaintenance</a> ()</td></tr>
+<tr class="memitem:a7b967a64bfcf577a9c5b04855b98688b" id="r_a7b967a64bfcf577a9c5b04855b98688b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7b967a64bfcf577a9c5b04855b98688b">EditorDelayedMaintenance</a> ()</td></tr>
 <tr class="memitem:a04b890d50087ca80e215118f5d3608f3" id="r_a04b890d50087ca80e215118f5d3608f3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a04b890d50087ca80e215118f5d3608f3">EditorDelayedRebuild</a> ()</td></tr>
+<tr class="memdesc:a04b890d50087ca80e215118f5d3608f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a delay call to rebuild the spline when the editor finishes updating the inspectors. It's okay to stack many of these in a single frame the extras will be ignored.  <br /></td></tr>
 <tr class="memitem:a5d10473e17425b3f73df279213b9eca2" id="r_a5d10473e17425b3f73df279213b9eca2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5d10473e17425b3f73df279213b9eca2">CancelEditorRebuild</a> ()</td></tr>
 <tr class="memitem:a7c2c71b02f9f48ff1d81422db6e63b0f" id="r_a7c2c71b02f9f48ff1d81422db6e63b0f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7c2c71b02f9f48ff1d81422db6e63b0f">OnValidate</a> ()</td></tr>
+<tr class="memitem:aab26287295a9fe0a77c373f953d611e6" id="r_aab26287295a9fe0a77c373f953d611e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aab26287295a9fe0a77c373f953d611e6">CleanupGeneratedChildrenEditorNow</a> ()</td></tr>
+<tr class="memdesc:aab26287295a9fe0a77c373f953d611e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup the generated children based on the <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_track_flow_generated_marker.html" title="A marker to indicate this object was generated by TrackFlowPro.">TrackFlowGeneratedMarker</a>.  <br /></td></tr>
 <tr class="memitem:a00313a980c53499291d8470ed67f5a59" id="r_a00313a980c53499291d8470ed67f5a59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a00313a980c53499291d8470ed67f5a59">EnsureObjectPoolInitialized</a> ()</td></tr>
 <tr class="memitem:ae816c726225edf563815fdf30272b70d" id="r_ae816c726225edf563815fdf30272b70d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae816c726225edf563815fdf30272b70d">HandleSplineRebuilt</a> (object sender, EventArgs args)</td></tr>
 <tr class="memitem:ad62cc630755c81b106faebb0d2e9140d" id="r_ad62cc630755c81b106faebb0d2e9140d"><td class="memItemLeft"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad62cc630755c81b106faebb0d2e9140d">ApplySpawnOffsetsPreserveFrames</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> basePoly)</td></tr>
@@ -210,6 +216,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:ac9841fee58e9c4d7fba71b34cdb25089" id="r_ac9841fee58e9c4d7fba71b34cdb25089"><td class="memItemLeft">Vector3 Quaternion rotation&#160;</td><td class="memItemRight"><a class="el" href="#ac9841fee58e9c4d7fba71b34cdb25089">GetSpawnOrientation</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_sample.html">TrackFlowSample</a> sample, Vector3 effectiveLocalOffset, float effectiveRollOffsetDegrees, out Vector3 upHintWS)</td></tr>
 <tr class="memitem:a6661befcd5e723bd35c19daae726883f" id="r_a6661befcd5e723bd35c19daae726883f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6661befcd5e723bd35c19daae726883f">OnDestroy</a> ()</td></tr>
 <tr class="memitem:ae3b3bdf2d865b74290c7798ef52cdd13" id="r_ae3b3bdf2d865b74290c7798ef52cdd13"><td class="memItemLeft">GameObject&#160;</td><td class="memItemRight"><a class="el" href="#ae3b3bdf2d865b74290c7798ef52cdd13">CreateNewPooledObject</a> ()</td></tr>
+<tr class="memdesc:ae3b3bdf2d865b74290c7798ef52cdd13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new pooled object, set it inactive reset its transform etc.  <br /></td></tr>
 <tr class="memitem:a35a7e284753d8ff48cb25668c590dc36" id="r_a35a7e284753d8ff48cb25668c590dc36"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a35a7e284753d8ff48cb25668c590dc36">OnGetPooledObject</a> (GameObject obj)</td></tr>
 <tr class="memitem:aeabf66fa88384ec4a94e23f66cfe2c51" id="r_aeabf66fa88384ec4a94e23f66cfe2c51"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeabf66fa88384ec4a94e23f66cfe2c51">OnReleasePooledObject</a> (GameObject obj)</td></tr>
 <tr class="memitem:ad4e5316ea7e043739554b3e0a15804aa" id="r_ad4e5316ea7e043739554b3e0a15804aa"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad4e5316ea7e043739554b3e0a15804aa">OnDestroyPooledObject</a> (GameObject obj)</td></tr>
@@ -221,8 +228,6 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a12470703bdbd04299fec9f3d39e6049b" id="r_a12470703bdbd04299fec9f3d39e6049b"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a12470703bdbd04299fec9f3d39e6049b">SpawnerWantsDeform</a> ()</td></tr>
 <tr class="memitem:a18edc73c73ac8aa33026bf2f61c5bb46" id="r_a18edc73c73ac8aa33026bf2f61c5bb46"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a18edc73c73ac8aa33026bf2f61c5bb46">TryBuildFinalPolyline</a> (out <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly)</td></tr>
 <tr class="memdesc:a18edc73c73ac8aa33026bf2f61c5bb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply offsets and deformations to the polyline, cache the result if enabled. if the spawner does not want a deformed polyline, return the base polyline instead.  <br /></td></tr>
-<tr class="memitem:a6933fdb5a5ccf3c0feffd4a630d34d82" id="r_a6933fdb5a5ccf3c0feffd4a630d34d82"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6933fdb5a5ccf3c0feffd4a630d34d82">BuildMeshFromSpline2</a> ()</td></tr>
-<tr class="memdesc:a6933fdb5a5ccf3c0feffd4a630d34d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">apply offsets and deformations and then build a mesh along the resulting polyline  <br /></td></tr>
 <tr class="memitem:a511217dfa5c9c62ef82721b307462f19" id="r_a511217dfa5c9c62ef82721b307462f19"><td class="memItemLeft">GameObject&#160;</td><td class="memItemRight"><a class="el" href="#a511217dfa5c9c62ef82721b307462f19">GetOrCreateMeshGO</a> ()</td></tr>
 <tr class="memitem:ae7f2ff3dc9b7eade270667f65c9d510a" id="r_ae7f2ff3dc9b7eade270667f65c9d510a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7f2ff3dc9b7eade270667f65c9d510a">BuildMeshFromSpline</a> ()</td></tr>
 <tr class="memitem:a0518516f8bb7a850cea9a7f1c33eb7e6" id="r_a0518516f8bb7a850cea9a7f1c33eb7e6"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a0518516f8bb7a850cea9a7f1c33eb7e6">TryBuildPlacementForSlot</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, float pathLength, int slotIndex, float baseS, float baseT01, out <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_track_flow_spawner_1_1_spawn_placement.html">SpawnPlacement</a> placement)</td></tr>
@@ -235,6 +240,7 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a5792580009b42ae669c56d6fa90b32c4" id="r_a5792580009b42ae669c56d6fa90b32c4"><td class="memItemLeft">static <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_track_flow_spawn_anchor_cache.html">TrackFlowSpawnAnchorCache</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5792580009b42ae669c56d6fa90b32c4">GetOrBuildAnchorCache</a> (GameObject root)</td></tr>
 <tr class="memitem:a359a1a6049e6a9997ac6f7f03c461c36" id="r_a359a1a6049e6a9997ac6f7f03c461c36"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a359a1a6049e6a9997ac6f7f03c461c36">ApplySpawnPose</a> (GameObject obj, Vector3 targetPos, Quaternion targetRot, Vector3 scale)</td></tr>
 <tr class="memitem:a6a7f00139736441309c3d85b6724f14c" id="r_a6a7f00139736441309c3d85b6724f14c"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a6a7f00139736441309c3d85b6724f14c">IsInPrefabStage</a> (GameObject go)</td></tr>
+<tr class="memitem:a52dc88b2c01c52bfbf089719aec0f0fb" id="r_a52dc88b2c01c52bfbf089719aec0f0fb"><td class="memItemLeft">static bool&#160;</td><td class="memItemRight"><a class="el" href="#a52dc88b2c01c52bfbf089719aec0f0fb">IsPersistentOrPrefabAssetObject</a> (GameObject go)</td></tr>
 <tr class="memitem:a52ac51b6f57aef947c14ea0b86238c08" id="r_a52ac51b6f57aef947c14ea0b86238c08"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a52ac51b6f57aef947c14ea0b86238c08">SubscribeToOnEditorQuitting</a> ()</td></tr>
 <tr class="memitem:a2c0be603089e59aefaabf181b74f4696" id="r_a2c0be603089e59aefaabf181b74f4696"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a2c0be603089e59aefaabf181b74f4696">CleanupAllSpawnedObjectsInScene</a> ()</td></tr>
 <tr class="memdesc:a2c0be603089e59aefaabf181b74f4696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to ensure we cleanup any spawned objects before the editor closes.  <br /></td></tr>
@@ -259,8 +265,11 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aeb01eccdeca560b4e996ef8953b86098" id="r_aeb01eccdeca560b4e996ef8953b86098"><td class="memItemLeft"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_curves_1_1_track_flow_spline.html">TrackFlowSpline</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeb01eccdeca560b4e996ef8953b86098">_subscribedSpline</a></td></tr>
 <tr class="memitem:afbaa5774c628d075fd0a6926ee21c370" id="r_afbaa5774c628d075fd0a6926ee21c370"><td class="memItemLeft">Transform&#160;</td><td class="memItemRight"><a class="el" href="#afbaa5774c628d075fd0a6926ee21c370">_instancesRoot</a></td></tr>
 <tr class="memitem:ac4523e66ca9a59834d16dcbaba50419a" id="r_ac4523e66ca9a59834d16dcbaba50419a"><td class="memItemLeft">Transform&#160;</td><td class="memItemRight"><a class="el" href="#ac4523e66ca9a59834d16dcbaba50419a">_poolRoot</a></td></tr>
-<tr class="memitem:adb7754938833ebc099f0463cb53ff010" id="r_adb7754938833ebc099f0463cb53ff010"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#adb7754938833ebc099f0463cb53ff010">_editorRebuildQueued</a></td></tr>
+<tr class="memitem:a55014864334ae0e4ecb618ffd0e4d2b5" id="r_a55014864334ae0e4ecb618ffd0e4d2b5"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a55014864334ae0e4ecb618ffd0e4d2b5">_editorMaintenanceQueued</a></td></tr>
+<tr class="memitem:a37933b5941da57099d867dcdcbeeee91" id="r_a37933b5941da57099d867dcdcbeeee91"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a37933b5941da57099d867dcdcbeeee91">_editorWantsCleanupOrphans</a></td></tr>
 <tr class="memitem:ac7aad413689b0e76d6f2aff4f2dbae88" id="r_ac7aad413689b0e76d6f2aff4f2dbae88"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#ac7aad413689b0e76d6f2aff4f2dbae88">_editorWantsNuke</a></td></tr>
+<tr class="memitem:a4c9c5d626e4921e9d9c9f0f1d2ce3f99" id="r_a4c9c5d626e4921e9d9c9f0f1d2ce3f99"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a4c9c5d626e4921e9d9c9f0f1d2ce3f99">_editorWantsRebuild</a></td></tr>
+<tr class="memitem:abe8f4cff92f3e059a1baf1c8c12b8a7e" id="r_abe8f4cff92f3e059a1baf1c8c12b8a7e"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#abe8f4cff92f3e059a1baf1c8c12b8a7e">_editorWantsPoolRefresh</a></td></tr>
 <tr class="memitem:a1b24b6eec183175313d1cf4d4f928707" id="r_a1b24b6eec183175313d1cf4d4f928707"><td class="memItemLeft">Vector3&#160;</td><td class="memItemRight"><a class="el" href="#a1b24b6eec183175313d1cf4d4f928707">position</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
@@ -358,33 +367,6 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6933fdb5a5ccf3c0feffd4a630d34d82" name="a6933fdb5a5ccf3c0feffd4a630d34d82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6933fdb5a5ccf3c0feffd4a630d34d82">&#9670;&#160;</a></span>BuildMeshFromSpline2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.BuildMeshFromSpline2 </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>apply offsets and deformations and then build a mesh along the resulting polyline </p>
 
 </div>
 </div>
@@ -495,6 +477,31 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac2840ea1fc2aa524b3b5aadad7c1b6b3" name="ac2840ea1fc2aa524b3b5aadad7c1b6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2840ea1fc2aa524b3b5aadad7c1b6b3">&#9670;&#160;</a></span>CancelEditorMaintenance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.CancelEditorMaintenance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5d10473e17425b3f73df279213b9eca2" name="a5d10473e17425b3f73df279213b9eca2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d10473e17425b3f73df279213b9eca2">&#9670;&#160;</a></span>CancelEditorRebuild()</h2>
 
@@ -517,6 +524,34 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a299a58d63492db865c39b6afb399b42f" name="a299a58d63492db865c39b6afb399b42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a299a58d63492db865c39b6afb399b42f">&#9670;&#160;</a></span>CanMutateGeneratedHierarchy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.CanMutateGeneratedHierarchy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the spawner should be able to change the scene hierarchy. Don't allow if it is a prefab or otherwise not a real object loaded into an active scene. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
@@ -547,19 +582,54 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab63889e24c31df9793a135149a90d469" name="ab63889e24c31df9793a135149a90d469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63889e24c31df9793a135149a90d469">&#9670;&#160;</a></span>CleanupOrphanChildrenEditor()</h2>
+<a id="aab26287295a9fe0a77c373f953d611e6" name="aab26287295a9fe0a77c373f953d611e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab26287295a9fe0a77c373f953d611e6">&#9670;&#160;</a></span>CleanupGeneratedChildrenEditorNow()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.CleanupOrphanChildrenEditor </td>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.CleanupGeneratedChildrenEditorNow </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cleanup the generated children based on the <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_track_flow_generated_marker.html" title="A marker to indicate this object was generated by TrackFlowPro.">TrackFlowGeneratedMarker</a>. </p>
+
+</div>
+</div>
+<a id="abb2119216745c03c26cbf000d024f192" name="abb2119216745c03c26cbf000d024f192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2119216745c03c26cbf000d024f192">&#9670;&#160;</a></span>CleanupOrphanChildrenEditorNow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.CleanupOrphanChildrenEditorNow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -629,6 +699,34 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Create a new pooled object, set it inactive reset its transform etc. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a7b967a64bfcf577a9c5b04855b98688b" name="a7b967a64bfcf577a9c5b04855b98688b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b967a64bfcf577a9c5b04855b98688b">&#9670;&#160;</a></span>EditorDelayedMaintenance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.EditorDelayedMaintenance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a04b890d50087ca80e215118f5d3608f3" name="a04b890d50087ca80e215118f5d3608f3"></a>
@@ -653,6 +751,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Add a delay call to rebuild the spline when the editor finishes updating the inspectors. It's okay to stack many of these in a single frame the extras will be ignored. </p>
 
 </div>
 </div>
@@ -1059,6 +1159,31 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a52dc88b2c01c52bfbf089719aec0f0fb" name="a52dc88b2c01c52bfbf089719aec0f0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52dc88b2c01c52bfbf089719aec0f0fb">&#9670;&#160;</a></span>IsPersistentOrPrefabAssetObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.IsPersistentOrPrefabAssetObject </td>
+          <td>(</td>
+          <td class="paramtype">GameObject</td>          <td class="paramname"><span class="paramname"><em>go</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a735246911115be98456f1977fa698d19" name="a735246911115be98456f1977fa698d19"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a735246911115be98456f1977fa698d19">&#9670;&#160;</a></span>JitterEnabled()</h2>
 
@@ -1303,8 +1428,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a41b44e8418fc120025e285cdb16649ea" name="a41b44e8418fc120025e285cdb16649ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41b44e8418fc120025e285cdb16649ea">&#9670;&#160;</a></span>QueueEditorRebuild()</h2>
+<a id="a6bce194c5aee36cfb88989f34ab922c1" name="a6bce194c5aee36cfb88989f34ab922c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bce194c5aee36cfb88989f34ab922c1">&#9670;&#160;</a></span>QueueEditorMaintenance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1313,10 +1438,24 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.QueueEditorRebuild </td>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner.QueueEditorMaintenance </td>
           <td>(</td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>nuclear</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>cleanupOrphans</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>nuclear</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>rebuild</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>refreshPool</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1325,14 +1464,6 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Add a delay call to rebuild the spline when the editor finishes updating the inspectors. It's okay to stack many of these in a single frame the extras will be ignored. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nuclear</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1865,8 +1996,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adb7754938833ebc099f0463cb53ff010" name="adb7754938833ebc099f0463cb53ff010"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb7754938833ebc099f0463cb53ff010">&#9670;&#160;</a></span>_editorRebuildQueued</h2>
+<a id="a55014864334ae0e4ecb618ffd0e4d2b5" name="a55014864334ae0e4ecb618ffd0e4d2b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55014864334ae0e4ecb618ffd0e4d2b5">&#9670;&#160;</a></span>_editorMaintenanceQueued</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1875,7 +2006,29 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner._editorRebuildQueued</td>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner._editorMaintenanceQueued</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37933b5941da57099d867dcdcbeeee91" name="a37933b5941da57099d867dcdcbeeee91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37933b5941da57099d867dcdcbeeee91">&#9670;&#160;</a></span>_editorWantsCleanupOrphans</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner._editorWantsCleanupOrphans</td>
         </tr>
       </table>
   </td>
@@ -1898,6 +2051,50 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner._editorWantsNuke</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe8f4cff92f3e059a1baf1c8c12b8a7e" name="abe8f4cff92f3e059a1baf1c8c12b8a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe8f4cff92f3e059a1baf1c8c12b8a7e">&#9670;&#160;</a></span>_editorWantsPoolRefresh</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner._editorWantsPoolRefresh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c9c5d626e4921e9d9c9f0f1d2ce3f99" name="a4c9c5d626e4921e9d9c9f0f1d2ce3f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c9c5d626e4921e9d9c9f0f1d2ce3f99">&#9670;&#160;</a></span>_editorWantsRebuild</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool TrackFlowPro.Runtime.Core.Meshing.TrackFlowSpawner._editorWantsRebuild</td>
         </tr>
       </table>
   </td>

@@ -11,5 +11,6 @@ var searchData=
   ['copyfromside_8',['CopyFromSide',['../class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder.html#ab9bbdf211ba323ceac47811e58f58231a76c1c05449c2b467320787a40e4ef1ab',1,'TrackFlowPro::Runtime::Core::Meshing::PolylineExtruder']]],
   ['curvature_9',['Curvature',['../namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eafa8bdf3c167e619ac571b1208d0e8343cb',1,'TrackFlowPro.Runtime.Core.Meshing.Curvature'],['../namespace_track_flow_pro_1_1_runtime.html#a0c82c55e177149ff96ac494bb404564ca8bdf3c167e619ac571b1208d0e8343cb',1,'TrackFlowPro.Runtime.Curvature']]],
   ['curvaturesigned_10',['CurvatureSigned',['../namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eafa11fc7d837d080bb219a432885a511b9a',1,'TrackFlowPro::Runtime::Core::Meshing']]],
-  ['custom_11',['Custom',['../namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#ae899a7857a56fa51361589b1ecc17072a90589c47f06eb971d548591f23c285af',1,'TrackFlowPro::Runtime::Core::Meshing']]]
+  ['curvespec_11',['CurveSpec',['../namespace_track_flow_pro_1_1_runtime.html#a0f31ec5e8cfea19251c1920313838cbbad96a12571dfd9503216ac9f45683b80a',1,'TrackFlowPro::Runtime']]],
+  ['custom_12',['Custom',['../namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#ae899a7857a56fa51361589b1ecc17072a90589c47f06eb971d548591f23c285af',1,'TrackFlowPro::Runtime::Core::Meshing']]]
 ];

@@ -93,11 +93,17 @@ $(function(){initNavTree('class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a349aaf9c626275af9d428564404ff9e8" id="r_a349aaf9c626275af9d428564404ff9e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a349aaf9c626275af9d428564404ff9e8">UpdateRuntimeColorProvider</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[] samples)</td></tr>
+<tr class="memitem:a988018fbb7182936485a034353f2023c" id="r_a988018fbb7182936485a034353f2023c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a988018fbb7182936485a034353f2023c">ClearRuntimeColorProvider</a> ()</td></tr>
+<tr class="memdesc:a988018fbb7182936485a034353f2023c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the runtime-only provider cache. Call this when preview is disabled or when cached preview data becomes invalid.  <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a32bfbee11c7e56e7f9596b7475d90b6c" id="r_a32bfbee11c7e56e7f9596b7475d90b6c"><td class="memItemLeft">static AnimationCurve&#160;</td><td class="memItemRight"><a class="el" href="#a32bfbee11c7e56e7f9596b7475d90b6c">InvertAnimationCurve</a> (AnimationCurve source)</td></tr>
+<tr class="memitem:a46a81eac0cf1469e4fe3609c6eb940cd" id="r_a46a81eac0cf1469e4fe3609c6eb940cd"><td class="memItemLeft">static AnimationCurve&#160;</td><td class="memItemRight"><a class="el" href="#a46a81eac0cf1469e4fe3609c6eb940cd">BuildAnimationCurveFromForceSamples</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[] samples, <a class="el" href="namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eaf">CurvaturePreviewMode</a> mode, bool closed, int maxKeys, out float offset, out float scale)</td></tr>
+<tr class="memdesc:a46a81eac0cf1469e4fe3609c6eb940cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">offset is the y offset needed to match all smoothed sample values after remapping from the normalized animation curve. scale is the scaled value.  <br /></td></tr>
 <tr class="memitem:a2cb18ffa2fad7c2619059266d978fa48" id="r_a2cb18ffa2fad7c2619059266d978fa48"><td class="memItemLeft">static AnimationCurve&#160;</td><td class="memItemRight"><a class="el" href="#a2cb18ffa2fad7c2619059266d978fa48">BuildAnimationCurveFromForceSamples</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[] samples, <a class="el" href="namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eaf">CurvaturePreviewMode</a> mode, bool closed, out float offset, out float scale)</td></tr>
-<tr class="memdesc:a2cb18ffa2fad7c2619059266d978fa48"><td class="mdescLeft">&#160;</td><td class="mdescRight">offset is the y offset needed to match all smoothed sample values after remapping from the normalized animation curve. scale is the scaled value.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -106,6 +112,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7a2829103dbce97c2d779d8e2a23543b" id="r_a7a2829103dbce97c2d779d8e2a23543b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a7a2829103dbce97c2d779d8e2a23543b">CurvatureMax</a> = 0f</td></tr>
 <tr class="memitem:ab4115171876dcc8bc8b3f7581814c693" id="r_ab4115171876dcc8bc8b3f7581814c693"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ab4115171876dcc8bc8b3f7581814c693">TorsionMax</a> = 0f</td></tr>
 <tr class="memitem:ac9a0d33364528c6935b434a22d8ae744" id="r_ac9a0d33364528c6935b434a22d8ae744"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ac9a0d33364528c6935b434a22d8ae744">GMax</a> = 0f</td></tr>
+<tr class="memitem:aca3fa79cc816af04105a218e8f4f89e0" id="r_aca3fa79cc816af04105a218e8f4f89e0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aca3fa79cc816af04105a218e8f4f89e0">curveMapMaxKeys</a> = 128</td></tr>
 <tr class="memitem:a3ba35f3257c439268f16eab3517154e1" id="r_a3ba35f3257c439268f16eab3517154e1"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a3ba35f3257c439268f16eab3517154e1">BankMaxDeg</a> = 90f</td></tr>
 <tr class="memitem:ae50bc3622ac9598c5e2b4e3e60bd692f" id="r_ae50bc3622ac9598c5e2b4e3e60bd692f"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#ae50bc3622ac9598c5e2b4e3e60bd692f">BankDeltaMaxDeg</a> = 45f</td></tr>
 <tr class="memitem:a1819272235a61d6cd0b586b7676856f2" id="r_a1819272235a61d6cd0b586b7676856f2"><td class="memItemLeft">Gradient&#160;</td><td class="memItemRight"><a class="el" href="#a1819272235a61d6cd0b586b7676856f2">CurvatureGradient</a> = <a class="el" href="#a67937bf46a2e81ef798cbd4d90dcb2b7">GetDefaultGradient</a>(false, Color.red, Color.white, Color.green, 1, 1)</td></tr>
@@ -116,17 +123,94 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a84d229e83220301ff6a77e76a5dfe7b1" id="r_a84d229e83220301ff6a77e76a5dfe7b1"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a84d229e83220301ff6a77e76a5dfe7b1">UseAdvancedGradients</a></td></tr>
 <tr class="memitem:a3e0bdb374635a0c4f75c44cd5f294e82" id="r_a3e0bdb374635a0c4f75c44cd5f294e82"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a3e0bdb374635a0c4f75c44cd5f294e82">UsePerAxisGAutoRange</a> = true</td></tr>
 <tr class="memitem:ad4ba4441d8d509e8a3eb193e764c0e03" id="r_ad4ba4441d8d509e8a3eb193e764c0e03"><td class="memItemLeft">AnimationCurve&#160;</td><td class="memItemRight"><a class="el" href="#ad4ba4441d8d509e8a3eb193e764c0e03">normalizedValueMap</a></td></tr>
-<tr class="memitem:a7b97ac680a1aad99cada2f6a374f2e8e" id="r_a7b97ac680a1aad99cada2f6a374f2e8e"><td class="memItemLeft">AnimationCurve&#160;</td><td class="memItemRight"><a class="el" href="#a7b97ac680a1aad99cada2f6a374f2e8e">invertedValueMap</a></td></tr>
 <tr class="memitem:a9791c4fe716d23992fe6427ccf6a079b" id="r_a9791c4fe716d23992fe6427ccf6a079b"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a9791c4fe716d23992fe6427ccf6a079b">mapOffset</a></td></tr>
 <tr class="memitem:a416faa372f2d33c138eb48b252461bfd" id="r_a416faa372f2d33c138eb48b252461bfd"><td class="memItemLeft">float&#160;</td><td class="memItemRight"><a class="el" href="#a416faa372f2d33c138eb48b252461bfd">mapScale</a></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-properties" class="groupheader"><a id="properties" name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:adf7355de2963cd8e07fb3e4c9c90a895" id="r_adf7355de2963cd8e07fb3e4c9c90a895"><td class="memItemLeft">Func&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a>, Color32 &gt;&#160;</td><td class="memItemRight"><a class="el" href="#adf7355de2963cd8e07fb3e4c9c90a895">ColorProvider</a><code> [get]</code></td></tr>
+<tr class="memdesc:adf7355de2963cd8e07fb3e4c9c90a895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safe accessor for runtime mesh color generation. Never returns null.  <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a8a39452e6ba7c3d4ea7bc9cddc981ae5" id="r_a8a39452e6ba7c3d4ea7bc9cddc981ae5"><td class="memItemLeft">static Color32&#160;</td><td class="memItemRight"><a class="el" href="#a8a39452e6ba7c3d4ea7bc9cddc981ae5">DefaultWhiteColorProvider</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a> _)</td></tr>
+<tr class="memitem:ae109430507b81d32a3eb1a620665c842" id="r_ae109430507b81d32a3eb1a620665c842"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#ae109430507b81d32a3eb1a620665c842">ResolveSampleIndex</a> (in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a> ring)</td></tr>
+<tr class="memitem:af68a7362a5d84b7380bd0c52e3c3ef59" id="r_af68a7362a5d84b7380bd0c52e3c3ef59"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#af68a7362a5d84b7380bd0c52e3c3ef59">ExtractPreviewValue</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a> s, <a class="el" href="namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eaf">CurvaturePreviewMode</a> mode)</td></tr>
+<tr class="memdesc:af68a7362a5d84b7380bd0c52e3c3ef59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the appropriate sample value from the curvature sample data given the appropriate curvature preview mode.  <br /></td></tr>
 <tr class="memitem:a67937bf46a2e81ef798cbd4d90dcb2b7" id="r_a67937bf46a2e81ef798cbd4d90dcb2b7"><td class="memItemLeft">static Gradient&#160;</td><td class="memItemRight"><a class="el" href="#a67937bf46a2e81ef798cbd4d90dcb2b7">GetDefaultGradient</a> (bool magnitudeGradient, Color minColor, Color zeroColor, Color maxColor, float alphaZero=1, float alphaMax=1)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac0bad691a174aecf9a5f91893ed369ac" id="r_ac0bad691a174aecf9a5f91893ed369ac"><td class="memItemLeft">Func&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a>, Color32 &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac0bad691a174aecf9a5f91893ed369ac">_runtimeColorProvider</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a319b9f1598f2b5392745bad561f4f616" id="r_a319b9f1598f2b5392745bad561f4f616"><td class="memItemLeft">static readonly Func&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a>, Color32 &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a319b9f1598f2b5392745bad561f4f616">s_DefaultWhiteColorProvider</a> = <a class="el" href="#a8a39452e6ba7c3d4ea7bc9cddc981ae5">DefaultWhiteColorProvider</a></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a46a81eac0cf1469e4fe3609c6eb940cd" name="a46a81eac0cf1469e4fe3609c6eb940cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46a81eac0cf1469e4fe3609c6eb940cd">&#9670;&#160;</a></span>BuildAnimationCurveFromForceSamples() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AnimationCurve TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.BuildAnimationCurveFromForceSamples </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[]</td>          <td class="paramname"><span class="paramname"><em>samples</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eaf">CurvaturePreviewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>closed</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>maxKeys</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float</td>          <td class="paramname"><span class="paramname"><em>offset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out float</td>          <td class="paramname"><span class="paramname"><em>scale</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>offset is the y offset needed to match all smoothed sample values after remapping from the normalized animation curve. scale is the scaled value. </p>
+<p>RecoveredValue(ti) = Evaluate(ti) * scale + offset;</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">samples</td><td></td></tr>
+    <tr><td class="paramname">settings</td><td></td></tr>
+    <tr><td class="paramname">offset</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a2cb18ffa2fad7c2619059266d978fa48" name="a2cb18ffa2fad7c2619059266d978fa48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cb18ffa2fad7c2619059266d978fa48">&#9670;&#160;</a></span>BuildAnimationCurveFromForceSamples()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb18ffa2fad7c2619059266d978fa48">&#9670;&#160;</a></span>BuildAnimationCurveFromForceSamples() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,13 +251,84 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>offset is the y offset needed to match all smoothed sample values after remapping from the normalized animation curve. scale is the scaled value. </p>
-<p>RecoveredValue(ti) = Evaluate(ti) * scale + offset;</p>
+</div>
+</div>
+<a id="a988018fbb7182936485a034353f2023c" name="a988018fbb7182936485a034353f2023c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a988018fbb7182936485a034353f2023c">&#9670;&#160;</a></span>ClearRuntimeColorProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.ClearRuntimeColorProvider </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the runtime-only provider cache. Call this when preview is disabled or when cached preview data becomes invalid. </p>
+
+</div>
+</div>
+<a id="a8a39452e6ba7c3d4ea7bc9cddc981ae5" name="a8a39452e6ba7c3d4ea7bc9cddc981ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a39452e6ba7c3d4ea7bc9cddc981ae5">&#9670;&#160;</a></span>DefaultWhiteColorProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Color32 TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.DefaultWhiteColorProvider </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a></td>          <td class="paramname"><span class="paramname"><em>_</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af68a7362a5d84b7380bd0c52e3c3ef59" name="af68a7362a5d84b7380bd0c52e3c3ef59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af68a7362a5d84b7380bd0c52e3c3ef59">&#9670;&#160;</a></span>ExtractPreviewValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.ExtractPreviewValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a></td>          <td class="paramname"><span class="paramname"><em>s</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing.html#a61b81bef84ab23f5961611e1f15c3eaf">CurvaturePreviewMode</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extract the appropriate sample value from the curvature sample data given the appropriate curvature preview mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">samples</td><td></td></tr>
-    <tr><td class="paramname">settings</td><td></td></tr>
-    <tr><td class="paramname">offset</td><td></td></tr>
+    <tr><td class="paramname">s</td><td></td></tr>
+    <tr><td class="paramname">mode</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -230,8 +385,8 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a32bfbee11c7e56e7f9596b7475d90b6c" name="a32bfbee11c7e56e7f9596b7475d90b6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32bfbee11c7e56e7f9596b7475d90b6c">&#9670;&#160;</a></span>InvertAnimationCurve()</h2>
+<a id="ae109430507b81d32a3eb1a620665c842" name="ae109430507b81d32a3eb1a620665c842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae109430507b81d32a3eb1a620665c842">&#9670;&#160;</a></span>ResolveSampleIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,22 +395,69 @@ Static Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AnimationCurve TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.InvertAnimationCurve </td>
+          <td class="memname">int TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.ResolveSampleIndex </td>
           <td>(</td>
-          <td class="paramtype">AnimationCurve</td>          <td class="paramname"><span class="paramname"><em>source</em></span></td><td>)</td>
+          <td class="paramtype">in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a></td>          <td class="paramname"><span class="paramname"><em>poly</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a></td>          <td class="paramname"><span class="paramname"><em>ring</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a id="a349aaf9c626275af9d428564404ff9e8" name="a349aaf9c626275af9d428564404ff9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349aaf9c626275af9d428564404ff9e8">&#9670;&#160;</a></span>UpdateRuntimeColorProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.UpdateRuntimeColorProvider </td>
+          <td>(</td>
+          <td class="paramtype">in <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a></td>          <td class="paramname"><span class="paramname"><em>poly</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_curvature_sample_data.html">CurvatureSampleData</a>[]</td>          <td class="paramname"><span class="paramname"><em>samples</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="ac0bad691a174aecf9a5f91893ed369ac" name="ac0bad691a174aecf9a5f91893ed369ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0bad691a174aecf9a5f91893ed369ac">&#9670;&#160;</a></span>_runtimeColorProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Func&lt;<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a>, Color32&gt; TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings._runtimeColorProvider</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae50bc3622ac9598c5e2b4e3e60bd692f" name="ae50bc3622ac9598c5e2b4e3e60bd692f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae50bc3622ac9598c5e2b4e3e60bd692f">&#9670;&#160;</a></span>BankDeltaMaxDeg</h2>
 
@@ -312,6 +514,20 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aca3fa79cc816af04105a218e8f4f89e0" name="aca3fa79cc816af04105a218e8f4f89e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca3fa79cc816af04105a218e8f4f89e0">&#9670;&#160;</a></span>curveMapMaxKeys</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.curveMapMaxKeys = 128</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afded61dfc831df6f2ccc2719b25e0816" name="afded61dfc831df6f2ccc2719b25e0816"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afded61dfc831df6f2ccc2719b25e0816">&#9670;&#160;</a></span>Enabled</h2>
 
@@ -348,20 +564,6 @@ Static Private Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">float TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.GMax = 0f</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7b97ac680a1aad99cada2f6a374f2e8e" name="a7b97ac680a1aad99cada2f6a374f2e8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b97ac680a1aad99cada2f6a374f2e8e">&#9670;&#160;</a></span>invertedValueMap</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AnimationCurve TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.invertedValueMap</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -438,6 +640,28 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a319b9f1598f2b5392745bad561f4f616" name="a319b9f1598f2b5392745bad561f4f616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319b9f1598f2b5392745bad561f4f616">&#9670;&#160;</a></span>s_DefaultWhiteColorProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly Func&lt;<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a>, Color32&gt; TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.s_DefaultWhiteColorProvider = <a class="el" href="#a8a39452e6ba7c3d4ea7bc9cddc981ae5">DefaultWhiteColorProvider</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af320d29323de56eb46e3c85482754dfe" name="af320d29323de56eb46e3c85482754dfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af320d29323de56eb46e3c85482754dfe">&#9670;&#160;</a></span>SignedGradient</h2>
 
@@ -505,6 +729,31 @@ Static Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-property-members" id="doc-property-members"></a><h2 id="header-doc-property-members" class="groupheader">Property Documentation</h2>
+<a id="adf7355de2963cd8e07fb3e4c9c90a895" name="adf7355de2963cd8e07fb3e4c9c90a895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7355de2963cd8e07fb3e4c9c90a895">&#9670;&#160;</a></span>ColorProvider</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Func&lt;<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">PolylineExtruder.RingInfo</a>, Color32&gt; TrackFlowPro.Runtime.Core.Meshing.ForcePreviewSettings.ColorProvider</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel get">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Safe accessor for runtime mesh color generation. Never returns null. </p>
 
 </div>
 </div>

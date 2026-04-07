@@ -100,6 +100,10 @@ Classes</h2></td></tr>
 <tr class="memitem:ShellSpec" id="r_ShellSpec"><td class="memItemLeft">struct &#160;</td><td class="memItemRight"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a></td></tr>
 <tr class="memitem:Result" id="r_Result"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0e3faa2a8dabce01af4d5fa7542f6956" id="r_a0e3faa2a8dabce01af4d5fa7542f6956"><td class="memItemLeft">static <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">RingInfo</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0e3faa2a8dabce01af4d5fa7542f6956">EvaluateRingAtS</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, float sMeters, float totalLen)</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pac-types" class="groupheader"><a id="pac-types" name="pac-types"></a>
 Package Types</h2></td></tr>
 <tr class="memitem:ab9bbdf211ba323ceac47811e58f58231" id="r_ab9bbdf211ba323ceac47811e58f58231"><td class="memItemLeft">enum &#160;</td><td class="memItemRight"><a class="el" href="#ab9bbdf211ba323ceac47811e58f58231">CapUvMode</a> { <a class="el" href="#ab9bbdf211ba323ceac47811e58f58231a76c1c05449c2b467320787a40e4ef1ab">CopyFromSide</a>
@@ -112,8 +116,8 @@ Package Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pac-static-methods" class="groupheader"><a id="pac-static-methods" name="pac-static-methods"></a>
 Static Package Functions</h2></td></tr>
-<tr class="memitem:a3baa88877ae3d29f2bef3ac55e05f919" id="r_a3baa88877ae3d29f2bef3ac55e05f919"><td class="memItemLeft">static <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a3baa88877ae3d29f2bef3ac55e05f919">Build</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt; shells, <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_options.html">Options</a> options, AnimationCurve trackScale, Func&lt; int, Color32 &gt; colorProvider=null)</td></tr>
-<tr class="memitem:ad72f9e9de9cbcc613bc1ec933a1c459f" id="r_ad72f9e9de9cbcc613bc1ec933a1c459f"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#ad72f9e9de9cbcc613bc1ec933a1c459f">PatchRecalculateNormalsSeams</a> (Mesh mesh, <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a> res, IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt; shells, bool fixProfileUSeams=true, bool fixClosedVRingSeam=true, bool fixTangentsIfPresent=true)</td></tr>
+<tr class="memitem:a436d6a15f0894a0891271aa5d7a594b9" id="r_a436d6a15f0894a0891271aa5d7a594b9"><td class="memItemLeft">static <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a>&#160;</td><td class="memItemRight"><a class="el" href="#a436d6a15f0894a0891271aa5d7a594b9">Build</a> (<a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt; shells, <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_options.html">Options</a> options, AnimationCurve trackScale, Func&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">RingInfo</a>, Color32 &gt; colorProvider=null)</td></tr>
+<tr class="memitem:a08559e4f433750eebc4f00be3a4508d5" id="r_a08559e4f433750eebc4f00be3a4508d5"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a08559e4f433750eebc4f00be3a4508d5">RecalculateNormals</a> (Mesh mesh, <a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a> res, IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt; shells, bool smoothProfileUSeams=true, bool smoothClosedVRingSeam=true)</td></tr>
 <tr class="memitem:a2629c483903989147eed2665f321dd55" id="r_a2629c483903989147eed2665f321dd55"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a2629c483903989147eed2665f321dd55">AddTubeEndRim</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a> r, <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt; shells, int outerShell, int innerShell, bool isEnd, bool duplicateForHardEdge=true, <a class="el" href="#ab9bbdf211ba323ceac47811e58f58231">CapUvMode</a> uvMode=<a class="el" href="#ab9bbdf211ba323ceac47811e58f58231a76c1c05449c2b467320787a40e4ef1ab">CapUvMode.CopyFromSide</a>)</td></tr>
 <tr class="memitem:a361645ba091a877571cdfd2bc6c5800e" id="r_a361645ba091a877571cdfd2bc6c5800e"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a361645ba091a877571cdfd2bc6c5800e">AddSolidEndCap</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a> r, <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a> poly, IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt; shells, int shellIndex, bool isEndCap, bool duplicateForHardEdge=true, <a class="el" href="#ab9bbdf211ba323ceac47811e58f58231">CapUvMode</a> uvMode=<a class="el" href="#ab9bbdf211ba323ceac47811e58f58231a4b648e2918307d2458804d407c63d3b3">CapUvMode.Planar01OnRing</a>)</td></tr>
 </table><table class="memberdecls">
@@ -123,6 +127,7 @@ Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a173745b9adc9492eaf14cab240dadac2" id="r_a173745b9adc9492eaf14cab240dadac2"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a173745b9adc9492eaf14cab240dadac2">ShellBase</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a> r, int ring, int shell)</td></tr>
 <tr class="memitem:add046e143e9484bbf79d1d443f34dce1" id="r_add046e143e9484bbf79d1d443f34dce1"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#add046e143e9484bbf79d1d443f34dce1">AppendDupVertex</a> (<a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a> r, int srcIndex, Vector2 uvOverride, bool overrideUv, out int newIndex)</td></tr>
 <tr class="memdesc:add046e143e9484bbf79d1d443f34dce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy a vertex into a result object  <br /></td></tr>
+<tr class="memitem:af48f86cbb19d55f8ff3ec22b1d22ac81" id="r_af48f86cbb19d55f8ff3ec22b1d22ac81"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#af48f86cbb19d55f8ff3ec22b1d22ac81">AverageNormalPair</a> (List&lt; Vector3 &gt; normals, int a, int b)</td></tr>
 <tr class="memitem:a0c8c8c93b199c505cd5af1bb63c3b0a5" id="r_a0c8c8c93b199c505cd5af1bb63c3b0a5"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a0c8c8c93b199c505cd5af1bb63c3b0a5">TriangulateEarClip</a> (Vector2[] pts, List&lt; int &gt; outTris)</td></tr>
 <tr class="memdesc:a0c8c8c93b199c505cd5af1bb63c3b0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ear clipping triangulation, google it if you already forgot  <br /></td></tr>
 <tr class="memitem:a89530f24724ed40658499eb0d5a928de" id="r_a89530f24724ed40658499eb0d5a928de"><td class="memItemLeft">static float&#160;</td><td class="memItemRight"><a class="el" href="#a89530f24724ed40658499eb0d5a928de">SignedArea</a> (Vector2[] p)</td></tr>
@@ -357,8 +362,42 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3baa88877ae3d29f2bef3ac55e05f919" name="a3baa88877ae3d29f2bef3ac55e05f919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3baa88877ae3d29f2bef3ac55e05f919">&#9670;&#160;</a></span>Build()</h2>
+<a id="af48f86cbb19d55f8ff3ec22b1d22ac81" name="af48f86cbb19d55f8ff3ec22b1d22ac81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48f86cbb19d55f8ff3ec22b1d22ac81">&#9670;&#160;</a></span>AverageNormalPair()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.PolylineExtruder.AverageNormalPair </td>
+          <td>(</td>
+          <td class="paramtype">List&lt; Vector3 &gt;</td>          <td class="paramname"><span class="paramname"><em>normals</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>a</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>b</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a436d6a15f0894a0891271aa5d7a594b9" name="a436d6a15f0894a0891271aa5d7a594b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436d6a15f0894a0891271aa5d7a594b9">&#9670;&#160;</a></span>Build()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +428,7 @@ Static Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Func&lt; int, Color32 &gt;</td>          <td class="paramname"><span class="paramname"><em>colorProvider</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+          <td class="paramtype">Func&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">RingInfo</a>, Color32 &gt;</td>          <td class="paramname"><span class="paramname"><em>colorProvider</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -424,6 +463,40 @@ Static Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e3faa2a8dabce01af4d5fa7542f6956" name="a0e3faa2a8dabce01af4d5fa7542f6956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3faa2a8dabce01af4d5fa7542f6956">&#9670;&#160;</a></span>EvaluateRingAtS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_ring_info.html">RingInfo</a> TrackFlowPro.Runtime.Core.Meshing.PolylineExtruder.EvaluateRingAtS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_sampling_1_1_chord_error_sampler_1_1_polyline.html">ChordErrorSampler.Polyline</a></td>          <td class="paramname"><span class="paramname"><em>poly</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>sMeters</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>totalLen</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -508,55 +581,6 @@ Static Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad72f9e9de9cbcc613bc1ec933a1c459f" name="ad72f9e9de9cbcc613bc1ec933a1c459f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad72f9e9de9cbcc613bc1ec933a1c459f">&#9670;&#160;</a></span>PatchRecalculateNormalsSeams()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.PolylineExtruder.PatchRecalculateNormalsSeams </td>
-          <td>(</td>
-          <td class="paramtype">Mesh</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a></td>          <td class="paramname"><span class="paramname"><em>res</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>shells</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fixProfileUSeams</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fixClosedVRingSeam</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>fixTangentsIfPresent</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel package">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a8f23aa270b51f4c222d7285c2bf28191" name="a8f23aa270b51f4c222d7285c2bf28191"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f23aa270b51f4c222d7285c2bf28191">&#9670;&#160;</a></span>PointInTri()</h2>
 
@@ -590,6 +614,50 @@ Static Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08559e4f433750eebc4f00be3a4508d5" name="a08559e4f433750eebc4f00be3a4508d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08559e4f433750eebc4f00be3a4508d5">&#9670;&#160;</a></span>RecalculateNormals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrackFlowPro.Runtime.Core.Meshing.PolylineExtruder.RecalculateNormals </td>
+          <td>(</td>
+          <td class="paramtype">Mesh</td>          <td class="paramname"><span class="paramname"><em>mesh</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_result.html">Result</a></td>          <td class="paramname"><span class="paramname"><em>res</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IReadOnlyList&lt; <a class="el" href="struct_track_flow_pro_1_1_runtime_1_1_core_1_1_meshing_1_1_polyline_extruder_1_1_shell_spec.html">ShellSpec</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>shells</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>smoothProfileUSeams</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>smoothClosedVRingSeam</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel package">package</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
